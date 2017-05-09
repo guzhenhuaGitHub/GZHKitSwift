@@ -35,7 +35,7 @@ public extension UIColor
     }
     // hex6: 6位16进制颜色码
     private convenience init(hex6: Int) {
-        self.init(hex8: hex6 << 4 | 0xF)
+        self.init(hex8: hex6 << 8 | 0xFF)
     }
     // hex8: 8位16进制颜色码
     private convenience init(hex8: Int) {
