@@ -7,10 +7,15 @@
 //
 
 import UIKit.UIImageView
-//import 
+import SDWebImage
 
-public extension GZHKit where Base: UIImageView {
+public extension GZHKit where Base: UIImageView
+{
     public func setImage(url: String, placeholder image: String) -> Void {
-        
+        (base as UIImageView).sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: image), options: .retryFailed) {
+            [weak base] (image, error, cacheType, imageUrl) in
+            guard let image = image else { return }
+            base?.image = image
+        }
     }
 }
