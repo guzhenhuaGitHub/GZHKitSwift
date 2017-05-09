@@ -11,7 +11,8 @@ import UIKit.UIColor
 //public extension GZHKit where Base: UIColor
 public extension UIColor
 {
-    public convenience init?(hex: Int) {
+    // hex: 16进制颜色码
+    public convenience init(hex: Int) {
         let length = String(format: "%x", hex).characters.count
         switch length {
         case 3:     self.init(hex3: hex)
