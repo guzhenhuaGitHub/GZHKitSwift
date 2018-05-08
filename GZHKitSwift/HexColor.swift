@@ -13,7 +13,7 @@ public extension UIColor
 {
     // hex: 16进制颜色码
     public convenience init(hex: UInt) {
-        let length = String(format: "%x", hex).characters.count
+        let length = String(format: "%x", hex).count
         switch length {
         case 3:     self.init(hex3: hex)
         case 4:     self.init(hex4: hex)

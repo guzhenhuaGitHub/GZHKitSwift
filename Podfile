@@ -6,6 +6,5 @@ target 'GZHKitSwiftExample' do
   use_frameworks!
 
   # Pods for GZHKitSwiftExample
-  pod 'SDWebImage'
 
 end
