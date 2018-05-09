@@ -38,7 +38,7 @@ platform :ios do
     # push 本地 tags
     push_git_tags 
     # push podspec 到仓库
-    pod_push(path: ".", allow_warnings: true) 
+    pod_push(allow_warnings: true) 
 
   end
 end
