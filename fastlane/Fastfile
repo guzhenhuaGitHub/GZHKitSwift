@@ -23,7 +23,7 @@ platform :ios do
     # 确保当前是 master 分支
     ensure_git_branch
     # 检查 Podspec 有效性
-    pod_lib_lint(allow_warnings:true)
+    pod_lib_lint(allow_warnings: true)
     #修改 podspec 版本号
     version_bump_podspec(version_number: options[:tag]) 
     # commit
@@ -36,7 +36,7 @@ platform :ios do
     # push 本地 tags
     push_git_tags 
     # push podspec 到仓库
-    pod_push(path: path, allow_warnings: true) 
+    pod_push(path: "*", allow_warnings: true) 
 
   end
 end
