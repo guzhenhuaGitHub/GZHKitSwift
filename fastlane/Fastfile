@@ -1,0 +1,42 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :upgrade do |options|
+    # 拉取最新代码
+    git_pull
+    # 确保当前是 master 分支
+    ensure_git_branch
+    # 检查 Podspec 有效性
+    pod_lib_lint(allow_warnings:true)
+    #修改 podspec 版本号
+    version_bump_podspec(version_number: options[:tag]) 
+    # commit
+    git_add(path: ".")
+    git_commit(path: ".", message: options[:message] || "update version to #{options[:tag]}") 
+    # 提交本地改动到远程分支
+    push_to_git_remote 
+    # 添加 tag
+    add_git_tag(tag: options[:tag]) 
+    # push 本地 tags
+    push_git_tags 
+    # push podspec 到仓库
+    pod_push(path: path, allow_warnings: true) 
+
+  end
+end
