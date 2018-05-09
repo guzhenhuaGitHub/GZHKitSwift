@@ -18,6 +18,8 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :upgrade do |options|
+    # 必须输入版本号
+    return unless options[:tag]
     # 拉取最新代码
     git_pull
     # 确保当前是 master 分支
