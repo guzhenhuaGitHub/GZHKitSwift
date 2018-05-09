@@ -28,7 +28,7 @@
 		58B715B21EC01C70004A2FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B715B01EC01C70004A2FA7 /* LaunchScreen.storyboard */; };
 		58B715BF1EC01DD3004A2FA7 /* GZHKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */; };
 		58B715C81EC03032004A2FA7 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715C71EC03032004A2FA7 /* ReusableCell.swift */; };
-		58B715D01EC03E6C004A2FA7 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715CF1EC03E6C004A2FA7 /* ApplicationExtension.swift */; };
+		58B715D01EC03E6C004A2FA7 /* WindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715CF1EC03E6C004A2FA7 /* WindowExtension.swift */; };
 		58B715D41EC04141004A2FA7 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715D31EC04141004A2FA7 /* StoryboardExtension.swift */; };
 		58B715D61EC04483004A2FA7 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */; };
 		58B715D81EC04970004A2FA7 /* BarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */; };
@@ -61,7 +61,7 @@
 		58B715B31EC01C70004A2FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZHKit.swift; sourceTree = "<group>"; };
 		58B715C71EC03032004A2FA7 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
-		58B715CF1EC03E6C004A2FA7 /* ApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
+		58B715CF1EC03E6C004A2FA7 /* WindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowExtension.swift; sourceTree = "<group>"; };
 		58B715D31EC04141004A2FA7 /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemExtension.swift; sourceTree = "<group>"; };
@@ -129,10 +129,12 @@
 		583169F120A2DFA2003090FF /* UI+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */,
 				583169F220A2DFA2003090FF /* ConvenienceInit.swift */,
-				58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */,
 				58B715C71EC03032004A2FA7 /* ReusableCell.swift */,
 				58B715D31EC04141004A2FA7 /* StoryboardExtension.swift */,
+				58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */,
+				58B715CF1EC03E6C004A2FA7 /* WindowExtension.swift */,
 			);
 			path = "UI+Extension";
 			sourceTree = "<group>";
@@ -164,8 +166,8 @@
 		583169FF20A2E034003090FF /* LocalFile */ = {
 			isa = PBXGroup;
 			children = (
-				58316A0020A2E034003090FF /* JsonSerialization.swift */,
 				58316A0120A2E034003090FF /* FileContent.swift */,
+				58316A0020A2E034003090FF /* JsonSerialization.swift */,
 				584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */,
 			);
 			path = LocalFile;
@@ -174,8 +176,8 @@
 		58316A0420A2E045003090FF /* Frame */ = {
 			isa = PBXGroup;
 			children = (
-				58316A0520A2E046003090FF /* UIView+Frame.swift */,
 				58316A0620A2E046003090FF /* UIScreen+Frame.swift */,
+				58316A0520A2E046003090FF /* UIView+Frame.swift */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -239,21 +241,19 @@
 		58B715BC1EC01DC7004A2FA7 /* GZHKitSwift */ = {
 			isa = PBXGroup;
 			children = (
-				58316A0B20A2E119003090FF /* Validations */,
-				58316A0420A2E045003090FF /* Frame */,
-				583169FF20A2E034003090FF /* LocalFile */,
-				583169FC20A2E019003090FF /* CurrentViewController */,
-				583169F920A2DFEA003090FF /* ImagePicker */,
+				58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */,
 				583169F420A2DFCD003090FF /* AttributedString */,
+				58316A0A20A2E0C9003090FF /* Color */,
+				583169FC20A2E019003090FF /* CurrentViewController */,
+				583169E920A2DF6C003090FF /* Device */,
+				58316A0420A2E045003090FF /* Frame */,
+				58316A0920A2E082003090FF /* Image */,
+				583169F920A2DFEA003090FF /* ImagePicker */,
+				583169FF20A2E034003090FF /* LocalFile */,
+				583169E620A2CB8C003090FF /* RegularExpression */,
 				583169F120A2DFA2003090FF /* UI+Extension */,
 				583169EC20A2DF8B003090FF /* UserAuthorization */,
-				583169E920A2DF6C003090FF /* Device */,
-				583169E620A2CB8C003090FF /* RegularExpression */,
-				58B715CF1EC03E6C004A2FA7 /* ApplicationExtension.swift */,
-				58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */,
-				58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */,
-				58316A0A20A2E0C9003090FF /* Color */,
-				58316A0920A2E082003090FF /* Image */,
+				58316A0B20A2E119003090FF /* Validations */,
 			);
 			path = GZHKitSwift;
 			sourceTree = SOURCE_ROOT;
@@ -386,7 +386,7 @@
 				58316A0320A2E034003090FF /* FileContent.swift in Sources */,
 				583169F320A2DFA3003090FF /* ConvenienceInit.swift in Sources */,
 				58B715D61EC04483004A2FA7 /* UITextField+Placeholder.swift in Sources */,
-				58B715D01EC03E6C004A2FA7 /* ApplicationExtension.swift in Sources */,
+				58B715D01EC03E6C004A2FA7 /* WindowExtension.swift in Sources */,
 				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
 				58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */,
