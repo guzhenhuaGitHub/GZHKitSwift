@@ -9,7 +9,6 @@
 public struct GZHKit<Base> {
     /// Base object to extend.
     public let base: Base
-    
     /// Creates extensions with base object.
     ///
     /// - parameter base: Base object.
@@ -22,10 +21,8 @@ public struct GZHKit<Base> {
 public protocol GZHKitCompatible {
     /// Extended type
     associatedtype CompatibleType
-    
     /// GZHKit extensions.
     static var gzh: GZHKit<CompatibleType>.Type { get set }
-    
     /// GZHKit extensions.
     var gzh: GZHKit<CompatibleType> { get set }
 }
@@ -40,7 +37,6 @@ extension GZHKitCompatible {
             // this enables using GZHKit to "mutate" base type
         }
     }
-    
     /// GZHKit extensions.
     public var gzh: GZHKit<Self> {
         get {

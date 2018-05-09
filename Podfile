@@ -6,5 +6,6 @@ target 'GZHKitSwiftExample' do
   use_frameworks!
 
   # Pods for GZHKitSwiftExample
+  pod 'SwiftLint'
 
 end

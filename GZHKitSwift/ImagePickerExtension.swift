@@ -8,12 +8,10 @@
 
 import UIKit.UIImagePickerController
 
-public extension GZHKit where Base: UIImagePickerController
-{
-    public static var camera: UIImagePickerController?
-    {
+public extension GZHKit where Base: UIImagePickerController {
+    public static var camera: UIImagePickerController? {
         var picker: UIImagePickerController?
-        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker = UIImagePickerController()
             picker?.sourceType = .camera
             picker?.allowsEditing = true
@@ -21,10 +19,9 @@ public extension GZHKit where Base: UIImagePickerController
         return picker
     }
 
-    public static var photoLibrary: UIImagePickerController?
-    {
+    public static var photoLibrary: UIImagePickerController? {
         var picker: UIImagePickerController?
-        if (UIImagePickerController.isSourceTypeAvailable(.photoLibrary)) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             picker = UIImagePickerController()
             picker?.sourceType = .photoLibrary
             picker?.allowsEditing = true
@@ -32,10 +29,9 @@ public extension GZHKit where Base: UIImagePickerController
         return picker
     }
 
-    public static var savedPhotosAlbum: UIImagePickerController?
-    {
+    public static var savedPhotosAlbum: UIImagePickerController? {
         var picker: UIImagePickerController?
-        if (UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)) {
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
             picker = UIImagePickerController()
             picker?.sourceType = .savedPhotosAlbum
             picker?.allowsEditing = true

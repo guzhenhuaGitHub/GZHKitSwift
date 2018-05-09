@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583169E720A2CB8C003090FF /* String+RegularExpression.swift */; };
 		584D7E2C1EC19EFE00E3D1A6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */; };
 		58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715A71EC01C70004A2FA7 /* AppDelegate.swift */; };
 		58B715AA1EC01C70004A2FA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715A91EC01C70004A2FA7 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		583169E720A2CB8C003090FF /* String+RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RegularExpression.swift"; sourceTree = "<group>"; };
 		584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		58B715A41EC01C70004A2FA7 /* GZHKitSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZHKitSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B715A71EC01C70004A2FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		583169E620A2CB8C003090FF /* RegularExpression */ = {
+			isa = PBXGroup;
+			children = (
+				583169E720A2CB8C003090FF /* String+RegularExpression.swift */,
+			);
+			path = RegularExpression;
+			sourceTree = "<group>";
+		};
 		58B7159B1EC01C70004A2FA7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		58B715BC1EC01DC7004A2FA7 /* GZHKitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				583169E620A2CB8C003090FF /* RegularExpression */,
 				58B715CF1EC03E6C004A2FA7 /* ApplicationExtension.swift */,
 				58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */,
 				58B715CD1EC03C38004A2FA7 /* CurrentViewController.swift */,
@@ -146,6 +157,7 @@
 				58B715A01EC01C70004A2FA7 /* Sources */,
 				58B715A11EC01C70004A2FA7 /* Frameworks */,
 				58B715A21EC01C70004A2FA7 /* Resources */,
+				583169E520A2C856003090FF /* [Swift Lint] */,
 			);
 			buildRules = (
 			);
@@ -205,6 +217,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		583169E520A2C856003090FF /* [Swift Lint] */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Swift Lint]";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		5B9AA03B896C8A15DF0EAEC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +269,7 @@
 				58B715D61EC04483004A2FA7 /* TextFieldExtension.swift in Sources */,
 				58B715D21EC0402C004A2FA7 /* ScreenExtension.swift in Sources */,
 				58B715D01EC03E6C004A2FA7 /* ApplicationExtension.swift in Sources */,
+				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
 				58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */,
 				58B715BF1EC01DD3004A2FA7 /* GZHKit.swift in Sources */,
 			);
@@ -384,6 +411,7 @@
 			baseConfigurationReference = 70843A45BD1E2167EE15A1AE /* Pods-GZHKitSwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GZHKitSwiftExample/Info.plist;
@@ -391,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noCom.GZHKitSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -401,6 +429,7 @@
 			baseConfigurationReference = 92185F624B88C452E47DB081 /* Pods-GZHKitSwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GZHKitSwiftExample/Info.plist;
@@ -408,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noCom.GZHKitSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

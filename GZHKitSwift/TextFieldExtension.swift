@@ -8,18 +8,16 @@
 
 import UIKit.UITextField
 
-fileprivate struct KeyPath
-{
+private struct KeyPath {
     static let placeholderColor = "placeholderLabel.textColor"
 }
 
-public extension GZHKit where Base: UITextField
-{
+public extension GZHKit where Base: UITextField {
     public var placeholderColor: UIColor? {
-        get{
+        get {
             return base.value(forKeyPath: KeyPath.placeholderColor) as? UIColor
         }
-        set{
+        set {
             // 懒加载占位符控件
             let oldPlaceholder = base.placeholder
             base.placeholder = ""

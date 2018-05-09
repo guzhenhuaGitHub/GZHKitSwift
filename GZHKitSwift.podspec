@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name            = "GZHKitSwift"
-  s.version         = "0.0.12"
+  s.version         = "0.0.13"
   s.summary         = "个人开发swift所用的工具包"
   s.description     = <<-DESC
                       GZHKitSwift
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.swift_version   = "4.1"
   s.source          = { :git => "https://github.com/guzhenhuaGitHub/GZHKitSwift.git", :tag => "#{s.version}" }
   s.source_files    = "GZHKitSwift", "GZHKitSwift/*.{h,m}"
-  # s.dependency "SDWebImage"
+  s.dependency      "SwiftLint"
 
 end

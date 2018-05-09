@@ -8,8 +8,7 @@
 
 import UIKit.UIApplication
 
-public extension GZHKit where Base: UIApplication
-{
+public extension GZHKit where Base: UIApplication {
     public static var keyWindow: UIWindow? { return Base.shared.keyWindow }
     public static var topWindow: UIWindow? { return Base.shared.windows.last }
 }

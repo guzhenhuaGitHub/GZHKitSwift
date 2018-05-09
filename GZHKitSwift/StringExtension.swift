@@ -9,11 +9,9 @@
 import Foundation.NSFileManager
 
 //public extension GZHKit where Base: String
-public extension String
-{
+public extension String {
     // 路径文件的大小
-    public var fileSize: UInt64
-    {
+    public var fileSize: UInt64 {
         var size: UInt64 = 0
         // 文件管理者
         let mgr = FileManager.default
@@ -29,14 +27,16 @@ public extension String
             guard let enumerator = mgr.enumerator(atPath: self) else { return size }
             for subpath in enumerator {
                 // 全路径
-                let fullSubpath = (self).appending(subpath as! String)
-                // 累加文件大小
-                size += try! mgr.attributesOfItem(atPath: fullSubpath)[.size] as! UInt64
+                if let subpath = subpath as? String {
+                    let fullSubpath = appending(subpath)
+                    // 累加文件大小
+                    size += (try? mgr.attributesOfItem(atPath: fullSubpath)[.size]) as? UInt64 ?? 0
+                }
             }
         } else { // 文件
-            size = try! mgr.attributesOfItem(atPath: self)[.size] as! UInt64
+            size = (try? mgr.attributesOfItem(atPath: self)[.size]) as? UInt64 ?? 0
         }
-        
+
         return size
     }
 }

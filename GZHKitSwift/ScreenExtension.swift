@@ -8,8 +8,7 @@
 
 import UIKit.UIScreen
 
-public extension GZHKit where Base: UIScreen
-{
+public extension GZHKit where Base: UIScreen {
     public static var width: CGFloat { return Base.main.bounds.size.width }
     public static var height: CGFloat { return Base.main.bounds.size.height }
 }

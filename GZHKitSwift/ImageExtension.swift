@@ -9,8 +9,7 @@
 import UIKit.UIImage
 
 //public extension GZHKit where Base: UIImage
-public extension UIImage
-{
+public extension UIImage {
     public convenience init?(originalImageNamed: String) {
         if let cgImage = UIImage(named: originalImageNamed)?.withRenderingMode(.alwaysOriginal).cgImage {
             self.init(cgImage: cgImage)
@@ -18,7 +17,7 @@ public extension UIImage
             self.init(named: originalImageNamed)
         }
     }
-    
+
     public convenience init(color: UIColor) {
         // 创建1个1x1的图片上下文
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
