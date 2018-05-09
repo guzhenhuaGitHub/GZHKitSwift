@@ -16,7 +16,17 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
+
+  desc "查看当前版本号"
+  lane :version do
+    version_to_string = "current podspec version is v#{version_get_podspec}"
+    UI.error      version_to_string 
+    UI.important  version_to_string 
+    UI.success    version_to_string
+    UI.deprecated version_to_string
+  end
+
+  desc "一键更新私有仓库到公有仓库"
   lane :upgrade do |options|
     # 必须输入版本号
     return unless options[:tag]
@@ -29,8 +39,7 @@ platform :ios do
     #修改 podspec 版本号
     version_bump_podspec(version_number: options[:tag]) 
     # commit
-    git_add
-    git_commit(path: ".", message: options[:message] || "update version to #{options[:tag]}") 
+    commit options[:message] || "update version to #{options[:tag]}"
     # 提交本地改动到远程分支
     push_to_git_remote 
     # 添加 tag
@@ -39,6 +48,12 @@ platform :ios do
     push_git_tags 
     # push podspec 到仓库
     pod_push(allow_warnings: true) 
-
   end
+
+  desc "提交代码到远程仓库"
+  lane :commit do |options|
+    git_add
+    git_commit(path: ".", message: options[:message]) 
+  end
+
 end

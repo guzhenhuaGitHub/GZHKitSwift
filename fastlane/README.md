@@ -16,11 +16,21 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios version
+```
+fastlane ios version
+```
+查看当前版本号
 ### ios upgrade
 ```
 fastlane ios upgrade
 ```
-Description of what the lane does
+一键更新私有仓库到公有仓库
+### ios commit
+```
+fastlane ios commit
+```
+提交代码到远程仓库
 
 ----
 
