@@ -39,7 +39,7 @@ platform :ios do
     #修改 podspec 版本号
     version_bump_podspec(version_number: options[:tag]) 
     # commit
-    commit options[:message] || "update version to #{options[:tag]}"
+    commit(message: options[:message] || "update version to #{options[:tag]}")
     # 提交本地改动到远程分支
     push_to_git_remote 
     # 添加 tag
