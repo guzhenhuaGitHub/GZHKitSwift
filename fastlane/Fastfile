@@ -29,7 +29,7 @@ platform :ios do
     #修改 podspec 版本号
     version_bump_podspec(version_number: options[:tag]) 
     # commit
-    git_add(path: ".")
+    git_add
     git_commit(path: ".", message: options[:message] || "update version to #{options[:tag]}") 
     # 提交本地改动到远程分支
     push_to_git_remote 
