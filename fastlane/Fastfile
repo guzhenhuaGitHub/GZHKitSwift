@@ -17,6 +17,12 @@ default_platform(:ios)
 
 platform :ios do
 
+  before_all do |lane, options|
+    # 拉取最新代码
+    git_pull
+  end
+
+
   desc "查看当前版本号"
   lane :version do
     version_to_string = "current podspec version is v#{version_get_podspec}"
@@ -30,8 +36,6 @@ platform :ios do
   lane :upgrade do |options|
     # 必须输入版本号
     return unless options[:tag]
-    # 拉取最新代码
-    git_pull
     # 确保当前是 master 分支
     ensure_git_branch
     # 检查 Podspec 有效性
