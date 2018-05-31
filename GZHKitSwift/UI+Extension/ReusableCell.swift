@@ -9,7 +9,6 @@
 import UIKit.UITableViewCell
 import UIKit.UICollectionViewCell
 
-
 // Preferred: [Reusable](git@github.com:AliSoftware/Reusable.git)
 
 public protocol ReusableCellProtocol {
@@ -33,5 +32,4 @@ public extension ReusableCellProtocol where Self: UITableViewCell {
     }
 }
 
-public extension UITableViewCell: ReusableCellProtocol {}
-public extension UICollectionViewCell: ReusableCellProtocol {}
+extension UITableViewCell: ReusableCellProtocol {}

@@ -20,6 +20,8 @@
 		58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58316A0520A2E046003090FF /* UIView+Frame.swift */; };
 		58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58316A0620A2E046003090FF /* UIScreen+Frame.swift */; };
 		58316A0D20A2E119003090FF /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58316A0C20A2E119003090FF /* Validations.swift */; };
+		583336DB20BD3FF0002EE409 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583336DA20BD3FF0002EE409 /* Delay.swift */; };
+		5843AF0520BD4CA900488D93 /* LiteralDispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */; };
 		584D7E2C1EC19EFE00E3D1A6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */; };
 		58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715A71EC01C70004A2FA7 /* AppDelegate.swift */; };
 		58B715AA1EC01C70004A2FA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715A91EC01C70004A2FA7 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		58316A0520A2E046003090FF /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		58316A0620A2E046003090FF /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
 		58316A0C20A2E119003090FF /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		583336DA20BD3FF0002EE409 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralDispatchTime.swift; sourceTree = "<group>"; };
 		584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		58B715A41EC01C70004A2FA7 /* GZHKitSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZHKitSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B715A71EC01C70004A2FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +210,15 @@
 			path = Validations;
 			sourceTree = "<group>";
 		};
+		583336D920BD3F94002EE409 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				583336DA20BD3FF0002EE409 /* Delay.swift */,
+				5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		58B7159B1EC01C70004A2FA7 = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +254,7 @@
 		58B715BC1EC01DC7004A2FA7 /* GZHKitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				583336D920BD3F94002EE409 /* GCD */,
 				58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */,
 				583169F420A2DFCD003090FF /* AttributedString */,
 				58316A0A20A2E0C9003090FF /* Color */,
@@ -382,9 +396,11 @@
 				58B715DC1EC05322004A2FA7 /* HexColor.swift in Sources */,
 				58316A0220A2E034003090FF /* JsonSerialization.swift in Sources */,
 				583169F820A2DFCD003090FF /* AttributedString.swift in Sources */,
+				583336DB20BD3FF0002EE409 /* Delay.swift in Sources */,
 				58316A0320A2E034003090FF /* FileContent.swift in Sources */,
 				583169F320A2DFA3003090FF /* ConvenienceInit.swift in Sources */,
 				58B715D61EC04483004A2FA7 /* UITextField+Placeholder.swift in Sources */,
+				5843AF0520BD4CA900488D93 /* LiteralDispatchTime.swift in Sources */,
 				58B715D01EC03E6C004A2FA7 /* WindowExtension.swift in Sources */,
 				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
