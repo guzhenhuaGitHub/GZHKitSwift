@@ -33,3 +33,4 @@ public extension ReusableCellProtocol where Self: UITableViewCell {
 }
 
 extension UITableViewCell: ReusableCellProtocol {}
+extension UICollectionViewCell: ReusableCellProtocol {}
