@@ -36,6 +36,7 @@
 		58B715D81EC04970004A2FA7 /* BarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */; };
 		58B715DA1EC04CDA004A2FA7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715D91EC04CDA004A2FA7 /* UIImage+Color.swift */; };
 		58B715DC1EC05322004A2FA7 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715DB1EC05322004A2FA7 /* HexColor.swift */; };
+		58BDC5E620C4E010005D8621 /* UserDefaults+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDC5E520C4E010005D8621 /* UserDefaults+Subscript.swift */; };
 		7393EE87FA48A8533657F841 /* Pods_GZHKitSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E89DD5FEA3203D3F1180E25 /* Pods_GZHKitSwiftExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		58B715D71EC04970004A2FA7 /* BarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemExtension.swift; sourceTree = "<group>"; };
 		58B715D91EC04CDA004A2FA7 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		58B715DB1EC05322004A2FA7 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		58BDC5E520C4E010005D8621 /* UserDefaults+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Subscript.swift"; sourceTree = "<group>"; };
 		6E89DD5FEA3203D3F1180E25 /* Pods_GZHKitSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZHKitSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70843A45BD1E2167EE15A1AE /* Pods-GZHKitSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwiftExample/Pods-GZHKitSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		92185F624B88C452E47DB081 /* Pods-GZHKitSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwiftExample/Pods-GZHKitSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		58B715BC1EC01DC7004A2FA7 /* GZHKitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				58BDC5E420C4DFE7005D8621 /* UserDefaults */,
 				583336D920BD3F94002EE409 /* GCD */,
 				58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */,
 				583169F420A2DFCD003090FF /* AttributedString */,
@@ -271,6 +274,14 @@
 			);
 			path = GZHKitSwift;
 			sourceTree = SOURCE_ROOT;
+		};
+		58BDC5E420C4DFE7005D8621 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				58BDC5E520C4E010005D8621 /* UserDefaults+Subscript.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -405,6 +416,7 @@
 				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
 				58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */,
+				58BDC5E620C4E010005D8621 /* UserDefaults+Subscript.swift in Sources */,
 				58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */,
 				583169FE20A2E01A003090FF /* CurrentViewController.swift in Sources */,
 				58B715BF1EC01DD3004A2FA7 /* GZHKit.swift in Sources */,

@@ -54,6 +54,8 @@ platform :ios do
 
   desc "提交代码到远程仓库"
   lane :commit do |options|
+    # 必须输入message信息
+    return unless options[:message]
     # git add .
     git_add
     # git commit -m "xxx"
