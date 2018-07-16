@@ -8,10 +8,10 @@
 
 import Foundation
 
-typealias Task = (_ cancel: Bool) -> Void
+public typealias Task = (_ cancel: Bool) -> Void
 
 @discardableResult
-func delay(time: TimeInterval, execute work: @escaping () -> Void) -> Task? {
+public func delay(time: TimeInterval, execute work: @escaping () -> Void) -> Task? {
 
     func dispatch_later(block: @escaping () -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + time, execute: block)
@@ -38,6 +38,6 @@ func delay(time: TimeInterval, execute work: @escaping () -> Void) -> Task? {
     return result
 }
 
-func cancel(task: Task?) {
+public func cancel(task: Task?) {
     task?(true)
 }
