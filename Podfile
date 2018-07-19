@@ -8,6 +8,6 @@ target 'GZHKitSwiftExample' do
   inhibit_all_warnings!
 
   # Pods for GZHKitSwiftExample
-  pod 'SwiftLint'
+  pod 'SwiftLint', '~> 0.26.0'
 
 end

@@ -1,0 +1,4 @@
+identifier_name: # 定义命名规范
+  excluded: # 排除某些名字
+    - x
+    - y
