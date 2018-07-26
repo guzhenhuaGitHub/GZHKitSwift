@@ -3,21 +3,18 @@ excluded: # 执行 linting 时忽略的路径。 优先级比 `included` 更高�
   - Pods
 
 disabled_rules: # 禁止默认规则
-  - trailing_whitespace
   - function_body_length
   - file_length
   - type_name
   - line_length
-  - identifier_name
   - shorthand_operator
-  - function_parameter_count
   - large_tuple
-  - for_where
   - cyclomatic_complexity
   - block_based_kvo
 
 opt_in_rules: # 开启可选规则
   - array_init
+  - closure_end_indentation
   - closure_spacing
   - contains_over_first_not_nil
   - discouraged_object_literal

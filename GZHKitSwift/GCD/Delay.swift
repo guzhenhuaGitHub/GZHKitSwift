@@ -8,19 +8,19 @@
 
 import Foundation
 
-public typealias Task = (_ cancel: Bool) -> Void
+public typealias TaskClosureType = (_ cancel: Bool) -> Void
 
 @discardableResult
-public func delay(time: TimeInterval, execute work: @escaping () -> Void) -> Task? {
+public func delay(time: TimeInterval, execute work: @escaping () -> Void) -> TaskClosureType? {
 
     func dispatch_later(block: @escaping () -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + time, execute: block)
     }
 
     var workItem: DispatchWorkItem? = DispatchWorkItem(block: work)
-    var result: Task?
+    var result: TaskClosureType?
 
-    let delayedClosure: Task = { cancel in
+    let delayedClosure: TaskClosureType = { cancel in
         if let internalWorkItem = workItem, cancel == false {
             DispatchQueue.main.async(execute: internalWorkItem)
         }
@@ -38,6 +38,6 @@ public func delay(time: TimeInterval, execute work: @escaping () -> Void) -> Tas
     return result
 }
 
-public func cancel(task: Task?) {
+public func cancel(task: TaskClosureType?) {
     task?(true)
 }
