@@ -1,4 +1,53 @@
-identifier_name: # 定义命名规范
+excluded: # 执行 linting 时忽略的路径。 优先级比 `included` 更高。
+  - Carthage
+  - Pods
+
+disabled_rules: # 禁止默认规则
+  - trailing_whitespace
+  - function_body_length
+  - file_length
+  - type_name
+  - line_length
+  - identifier_name
+  - shorthand_operator
+  - function_parameter_count
+  - large_tuple
+  - for_where
+  - cyclomatic_complexity
+  - block_based_kvo
+
+opt_in_rules: # 开启可选规则
+  - array_init
+  - closure_spacing
+  - contains_over_first_not_nil
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_string
+  - explicit_init
+  - fallthrough
+  - fatal_error_message
+  - first_where
+  - joined_default_parameter
+  - multiline_parameters
+  - nimble_operator
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - prefixed_toplevel_constant
+  - redundant_nil_coalescing
+  - required_enum_case
+  - sorted_first_last
+
+identifier_name:
+  min_length:
+    warning: 0
   excluded: # 排除某些名字
+    - i
     - x
     - y
+    - id
+    - a
+    - r
+    - g
+    - b
+    - vc

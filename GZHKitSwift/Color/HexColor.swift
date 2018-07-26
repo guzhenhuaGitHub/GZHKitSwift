@@ -34,18 +34,15 @@ public extension UIColor {
     // hex4: 4位16进制颜色码 (rgba)
     private convenience init(hex4: String) {
         let hex = hex4.hex
-        var alpha = (hex & 0xF000) >> 12
-        var red   = (hex & 0x0F00) >> 8
-        var green = (hex & 0x00F0) >> 4
-        var blue  = (hex & 0x000F) >> 0
-        red   = (red   << 4) + red
-        green = (green << 4) + green
-        blue  = (blue  << 4) + blue
-        alpha = (alpha << 4) + alpha
-        self.init(red: CGFloat(red)/255.0,
-                  green: CGFloat(green)/255.0,
-                  blue: CGFloat(blue)/255.0,
-                  alpha: CGFloat(alpha)/255.0)
+        var a = (hex & 0xF000) >> 12
+        var r = (hex & 0x0F00) >> 8
+        var g = (hex & 0x00F0) >> 4
+        var b = (hex & 0x000F) >> 0
+        r = (r << 4) + r
+        g = (g << 4) + g
+        b = (b << 4) + b
+        a = (a << 4) + a
+        self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(a) / 255.0)
     }
     // hex6: 6位16进制颜色码 (rrggbb)
     private convenience init(hex6: String) {
@@ -54,14 +51,11 @@ public extension UIColor {
     // hex8: 8位16进制颜色码 (rrggbbaa)
     private convenience init(hex8: String) {
         let hex = hex8.hex
-        let alpha = (hex & 0xFF000000) >> 24
-        let red   = (hex & 0x00FF0000) >> 16
-        let green = (hex & 0x0000FF00) >> 8
-        let blue  = (hex & 0x000000FF) >> 0
-        self.init(red: CGFloat(red)/255.0,
-                  green: CGFloat(green)/255.0,
-                  blue: CGFloat(blue)/255.0,
-                  alpha: CGFloat(alpha)/255.0)
+        let a = (hex & 0xFF000000) >> 24
+        let r = (hex & 0x00FF0000) >> 16
+        let g = (hex & 0x0000FF00) >> 8
+        let b = (hex & 0x000000FF) >> 0
+        self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(a) / 255.0)
     }
 }
 
