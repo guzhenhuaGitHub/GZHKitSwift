@@ -21,7 +21,10 @@ public extension UIImage {
     public convenience init(color: UIColor) {
         // 创建1个1x1的图片上下文
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+        // 开启图片上下文
         UIGraphicsBeginImageContext(rect.size)
+        // 延迟关闭图片上下文
+        defer { UIGraphicsEndImageContext() }
         // 获取图片上下文
         guard let context = UIGraphicsGetCurrentContext() else {
             // 获取图片上下文失败
@@ -38,8 +41,6 @@ public extension UIImage {
             self.init()
             return
         }
-        // 关闭图片上下文
-        UIGraphicsEndImageContext()
         // 获取图片的CG图
         guard let cgImage = theImage.cgImage else {
             // 获取图片的CG图失败

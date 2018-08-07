@@ -16,7 +16,7 @@ extension Data {
             json = try JSONSerialization
                 .jsonObject(with: self, options: JSONSerialization.ReadingOptions.mutableContainers)
         } catch let error as NSError {
-            fatalError("Error: \(error.domain)")
+            fatalError("Error: \(error.localizedDescription)")
         }
         return json!
     }

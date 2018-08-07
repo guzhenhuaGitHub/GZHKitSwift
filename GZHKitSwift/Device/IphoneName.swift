@@ -94,7 +94,7 @@ public extension UIDevice {
 
         case "i386",
              "x86_64":      return "Simulator"
-        default:  return identifier
+        default:            return identifier
         }
     }
 }

@@ -19,11 +19,14 @@ public extension UIViewController {
 
 private extension UIViewController {
     var current: UIViewController? {
-        if let nav = self as? UINavigationController {
+        switch self {
+        case let nav as UINavigationController:
             return nav.visibleViewController?.current
-        } else if let tab = self as? UITabBarController {
+        
+        case let tab as UITabBarController:
             return tab.selectedViewController?.current
-        } else {
+            
+        default:
             return presentedViewController ?? self
         }
     }

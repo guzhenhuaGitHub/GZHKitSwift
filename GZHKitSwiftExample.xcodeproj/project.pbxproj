@@ -23,6 +23,7 @@
 		583336DB20BD3FF0002EE409 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583336DA20BD3FF0002EE409 /* Delay.swift */; };
 		5843AF0520BD4CA900488D93 /* LiteralDispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */; };
 		584D7E2C1EC19EFE00E3D1A6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */; };
+		587CF65B21130CFA00CF613B /* TableViewDelegateConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */; };
 		5887F7C52111462B00D582E4 /* DispatchQueue+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887F7C42111462B00D582E4 /* DispatchQueue+Extention.swift */; };
 		588BD8F920FC403900009790 /* SafeAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588BD8F820FC403900009790 /* SafeAsync.swift */; };
 		58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B715A71EC01C70004A2FA7 /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 		583336DA20BD3FF0002EE409 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralDispatchTime.swift; sourceTree = "<group>"; };
 		584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateConvertable.swift; sourceTree = "<group>"; };
 		5887F7C42111462B00D582E4 /* DispatchQueue+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extention.swift"; sourceTree = "<group>"; };
 		588BD8F820FC403900009790 /* SafeAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAsync.swift; sourceTree = "<group>"; };
 		58B715A41EC01C70004A2FA7 /* GZHKitSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZHKitSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				58B715D31EC04141004A2FA7 /* StoryboardExtension.swift */,
 				58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */,
 				58B715CF1EC03E6C004A2FA7 /* WindowExtension.swift */,
+				587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */,
 			);
 			path = "UI+Extension";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				58B715A11EC01C70004A2FA7 /* Frameworks */,
 				58B715A21EC01C70004A2FA7 /* Resources */,
 				583169E520A2C856003090FF /* [Swift Lint] */,
+				898E7F8D0162DA24961B0B29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,6 +407,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		898E7F8D0162DA24961B0B29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GZHKitSwiftExample/Pods-GZHKitSwiftExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRichString/SwiftRichString.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRichString.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZHKitSwiftExample/Pods-GZHKitSwiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -434,6 +458,7 @@
 				58B715D01EC03E6C004A2FA7 /* WindowExtension.swift in Sources */,
 				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
+				587CF65B21130CFA00CF613B /* TableViewDelegateConvertable.swift in Sources */,
 				58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */,
 				58BDC5E620C4E010005D8621 /* UserDefaults+Subscript.swift in Sources */,
 				58B715A81EC01C70004A2FA7 /* AppDelegate.swift in Sources */,
