@@ -9,6 +9,4 @@ target 'GZHKitSwiftExample' do
 
   # Pods for GZHKitSwiftExample
   pod 'SwiftLint', '~> 0.26.0'
-  pod 'SnapKit'
-  pod 'SwiftRichString'
 end

@@ -22,10 +22,10 @@ private extension UIViewController {
         switch self {
         case let nav as UINavigationController:
             return nav.visibleViewController?.current
-        
+
         case let tab as UITabBarController:
             return tab.selectedViewController?.current
-            
+
         default:
             return presentedViewController ?? self
         }

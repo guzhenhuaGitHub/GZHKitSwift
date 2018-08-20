@@ -1,24 +1,16 @@
 PODS:
-  - SnapKit (4.0.0)
   - SwiftLint (0.26.0)
-  - SwiftRichString (2.0.1)
 
 DEPENDENCIES:
-  - SnapKit
   - SwiftLint (~> 0.26.0)
-  - SwiftRichString
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SnapKit
     - SwiftLint
-    - SwiftRichString
 
 SPEC CHECKSUMS:
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  SwiftRichString: 3b29b5f2eb0eb244497532f2fd2ec26318eae584
 
-PODFILE CHECKSUM: a1b860d92f85c08d57566442fb3856fec6db4c5d
+PODFILE CHECKSUM: 32b127f047aaba9355ed1954a842a58cd4ac49de
 
 COCOAPODS: 1.5.3
