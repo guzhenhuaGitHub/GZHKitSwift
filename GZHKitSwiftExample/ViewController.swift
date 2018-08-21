@@ -7,19 +7,12 @@
 //
 
 import UIKit
-import SnapKit
-import SwiftRichString
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let label = UILabel()
-        view.addSubview(label)
-        label.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-        }
 
     }
 
