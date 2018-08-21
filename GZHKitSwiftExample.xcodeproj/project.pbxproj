@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5820CAF8212BB7D50006F54A /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820CAF7212BB7D40006F54A /* ChildViewController.swift */; };
 		583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583169E720A2CB8C003090FF /* String+RegularExpression.swift */; };
 		583169EB20A2DF6C003090FF /* IphoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583169EA20A2DF6C003090FF /* IphoneName.swift */; };
 		583169EF20A2DF8B003090FF /* RemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583169ED20A2DF8B003090FF /* RemoteNotification.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5820CAF7212BB7D40006F54A /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		583169E720A2CB8C003090FF /* String+RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RegularExpression.swift"; sourceTree = "<group>"; };
 		583169EA20A2DF6C003090FF /* IphoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IphoneName.swift; sourceTree = "<group>"; };
 		583169ED20A2DF8B003090FF /* RemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotification.swift; sourceTree = "<group>"; };
@@ -171,12 +173,13 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
-		583169FC20A2E019003090FF /* CurrentViewController */ = {
+		583169FC20A2E019003090FF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5820CAF7212BB7D40006F54A /* ChildViewController.swift */,
 				583169FD20A2E019003090FF /* CurrentViewController.swift */,
 			);
-			path = CurrentViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		583169FF20A2E034003090FF /* LocalFile */ = {
@@ -266,7 +269,7 @@
 				58B715BD1EC01DD3004A2FA7 /* GZHKit.swift */,
 				583169F420A2DFCD003090FF /* AttributedString */,
 				58316A0A20A2E0C9003090FF /* Color */,
-				583169FC20A2E019003090FF /* CurrentViewController */,
+				583169FC20A2E019003090FF /* ViewController */,
 				583169E920A2DF6C003090FF /* Device */,
 				58316A0420A2E045003090FF /* Frame */,
 				583336D920BD3F94002EE409 /* GCD */,
@@ -436,6 +439,7 @@
 				588BD8F920FC403900009790 /* SafeAsync.swift in Sources */,
 				58B715D01EC03E6C004A2FA7 /* WindowExtension.swift in Sources */,
 				583169E820A2CB8C003090FF /* String+RegularExpression.swift in Sources */,
+				5820CAF8212BB7D50006F54A /* ChildViewController.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
 				587CF65B21130CFA00CF613B /* TableViewDelegateConvertable.swift in Sources */,
 				58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */,
