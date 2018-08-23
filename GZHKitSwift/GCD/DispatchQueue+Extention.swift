@@ -17,7 +17,7 @@ public extension DispatchQueue {
     func after(_ delay: TimeInterval, execute workItem: DispatchWorkItem) {
         asyncAfter(deadline: .now() + delay, execute: workItem)
     }
-    
+
     func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) {
         after(delay, execute: DispatchWorkItem(block: closure))
     }

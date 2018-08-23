@@ -22,14 +22,14 @@
 import Foundation
 
 struct EquatableValueSequence<T: Equatable> {
-    static func ==(lhs: EquatableValueSequence<T>, rhs: T) -> Bool {
+    static func == (lhs: EquatableValueSequence<T>, rhs: T) -> Bool {
         return lhs.values.contains(rhs)
     }
-    
-    static func ==(lhs: T, rhs: EquatableValueSequence<T>) -> Bool {
+
+    static func == (lhs: T, rhs: EquatableValueSequence<T>) -> Bool {
         return rhs == lhs
     }
-    
+
     fileprivate let values: [T]
 }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 LanSi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIViewController {
     func addComponentViewController(_ viewController: UIViewController) {
@@ -19,7 +19,7 @@ extension UIViewController {
         viewController.view.frame.size = containerView.frame.size
         viewController.didMove(toParentViewController: self)
     }
-    
+
     func removeComponented() {
         guard parent != nil else {
             return
