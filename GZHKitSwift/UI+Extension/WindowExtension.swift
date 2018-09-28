@@ -9,6 +9,10 @@
 import UIKit
 
 public extension UIWindow {
-    public static var key: UIWindow? { return UIApplication.shared.keyWindow }
-    public static var top: UIWindow? { return UIApplication.shared.windows.last }
+    public static var key: UIWindow? {
+        return UIApplication.shared.keyWindow
+    }
+    public static var top: UIWindow? {
+        return UIApplication.shared.windows.last
+    }
 }

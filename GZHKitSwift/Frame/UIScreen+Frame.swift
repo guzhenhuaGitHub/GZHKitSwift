@@ -9,7 +9,13 @@
 import UIKit.UIScreen
 
 public extension UIScreen {
-    public static var size: CGSize { return main.bounds.size }
-    public static var width: CGFloat { return size.width }
-    public static var height: CGFloat { return size.height }
+    public static var size: CGSize {
+        return main.bounds.size
+    }
+    public static var width: CGFloat {
+        return size.width
+    }
+    public static var height: CGFloat {
+        return size.height
+    }
 }

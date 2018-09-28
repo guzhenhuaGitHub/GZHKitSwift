@@ -27,10 +27,12 @@ public extension UIColor {
         default:    fatalError("'\(hexadecimal)' is not a hex string")
         }
     }
+
     // hex3: 3位16进制颜色码 (rgb)
     private convenience init(hex3: String) {
         self.init(hex4: "F" + hex3)
     }
+
     // hex4: 4位16进制颜色码 (rgba)
     private convenience init(hex4: String) {
         let hex = hex4.hex
@@ -44,10 +46,12 @@ public extension UIColor {
         a = (a << 4) + a
         self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(a) / 255.0)
     }
+
     // hex6: 6位16进制颜色码 (rrggbb)
     private convenience init(hex6: String) {
         self.init(hex8: "FF" + hex6)
     }
+
     // hex8: 8位16进制颜色码 (rrggbbaa)
     private convenience init(hex8: String) {
         let hex = hex8.hex

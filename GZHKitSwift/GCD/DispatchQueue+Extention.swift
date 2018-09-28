@@ -9,10 +9,18 @@
 import Foundation
 
 public extension DispatchQueue {
-    static var userInteractive: DispatchQueue { return .global(qos: .userInteractive) }
-    static var userInitiated: DispatchQueue { return .global(qos: .userInitiated) }
-    static var utility: DispatchQueue { return .global(qos: .utility) }
-    static var background: DispatchQueue { return .global(qos: .background) }
+    static var userInteractive: DispatchQueue {
+        return .global(qos: .userInteractive)
+    }
+    static var userInitiated: DispatchQueue {
+        return .global(qos: .userInitiated)
+    }
+    static var utility: DispatchQueue {
+        return .global(qos: .utility)
+    }
+    static var background: DispatchQueue {
+        return .global(qos: .background)
+    }
 
     func after(_ delay: TimeInterval, execute workItem: DispatchWorkItem) {
         asyncAfter(deadline: .now() + delay, execute: workItem)

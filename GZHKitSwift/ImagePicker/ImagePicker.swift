@@ -10,9 +10,15 @@ import UIKit
 
 public extension UIImagePickerController {
 
-    public static var camera: UIImagePickerController? { return picker(with: .camera) }
-    public static var photoLibrary: UIImagePickerController? { return picker(with: .photoLibrary) }
-    public static var savedPhotosAlbum: UIImagePickerController? { return picker(with: .savedPhotosAlbum) }
+    public static var camera: UIImagePickerController? {
+        return picker(with: .camera)
+    }
+    public static var photoLibrary: UIImagePickerController? {
+        return picker(with: .photoLibrary)
+    }
+    public static var savedPhotosAlbum: UIImagePickerController? {
+        return picker(with: .savedPhotosAlbum)
+    }
 
 }
 

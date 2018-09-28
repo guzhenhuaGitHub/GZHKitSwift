@@ -10,17 +10,25 @@ import Foundation
 
 extension UserDefaults {
     subscript<T>(key: String) -> T? {
-        get { return value(forKey: key) as? T }
-        set { setValue(newValue, forKey: key) }
+        get {
+            return value(forKey: key) as? T
+        }
+        set {
+            setValue(newValue, forKey: key)
+        }
     }
 }
 
 extension UserDefaults {
     subscript<T: RawRepresentable>(key: String) -> T? {
         get {
-            guard let rawValue = value(forKey: key) as? T.RawValue else { return nil }
+            guard let rawValue = value(forKey: key) as? T.RawValue else {
+                return nil
+            }
             return T(rawValue: rawValue)
         }
-        set { setValue(newValue, forKey: key) }
+        set {
+            setValue(newValue, forKey: key)
+        }
     }
 }

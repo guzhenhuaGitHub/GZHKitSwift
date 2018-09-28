@@ -49,5 +49,7 @@ extension GZHKitCompatible {
 }
 
 import Foundation.NSObject
+
 /// Extend NSObject with `gzh` proxy.
-extension NSObject: GZHKitCompatible { }
+extension NSObject: GZHKitCompatible {
+}

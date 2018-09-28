@@ -24,7 +24,9 @@ public extension UIImage {
         // 开启图片上下文
         UIGraphicsBeginImageContext(rect.size)
         // 延迟关闭图片上下文
-        defer { UIGraphicsEndImageContext() }
+        defer {
+            UIGraphicsEndImageContext()
+        }
         // 获取图片上下文
         guard let context = UIGraphicsGetCurrentContext() else {
             // 获取图片上下文失败

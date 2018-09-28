@@ -14,7 +14,9 @@ extension String {
     var isMobile: Bool {
 
         let compacted = self.replacingOccurrences(of: " ", with: "")
-        if compacted.count != 11 { return false }
+        if compacted.count != 11 {
+            return false
+        }
 
         /**
          * 2018最新验证手机号正则表达式
@@ -36,7 +38,9 @@ extension String {
     var isIDCardNumber: Bool {
         // 修剪字符串前后空格和空行
         let trimmed = self.trimmingCharacters(in: .whitespacesAndNewlines)
-        if trimmed.count != 18 { return false }
+        if trimmed.count != 18 {
+            return false
+        }
         // 身份证号正则表达式
         let mmdd = "(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8])))"
         let LEAPmmdd = "0229"
@@ -52,7 +56,9 @@ extension String {
             return false
         }
         // 校验位校验
-        let weight = "7 9 10 5 8 4 2 1 6 3 7 9 10 5 8 4 2".split(separator: " ").map { str in Int(str)! }
+        let weight = "7 9 10 5 8 4 2 1 6 3 7 9 10 5 8 4 2".split(separator: " ").map { str in
+            Int(str)!
+        }
         let validate = "1 0 X 9 8 7 6 5 4 3 2".split(separator: " ")
 
         var weightVal = 0

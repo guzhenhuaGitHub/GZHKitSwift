@@ -17,8 +17,12 @@ public protocol ReusableCellProtocol {
 }
 
 public extension ReusableCellProtocol {
-    public static var reuseIdentifier: String { return "\(Self.self)" }
-    public static var nib: UINib { return UINib(nibName: "\(Self.self)", bundle: nil) }
+    public static var reuseIdentifier: String {
+        return "\(Self.self)"
+    }
+    public static var nib: UINib {
+        return UINib(nibName: "\(Self.self)", bundle: nil)
+    }
 }
 
 public extension ReusableCellProtocol where Self: UITableViewCell {
@@ -32,5 +36,8 @@ public extension ReusableCellProtocol where Self: UITableViewCell {
     }
 }
 
-extension UITableViewCell: ReusableCellProtocol {}
-extension UICollectionViewCell: ReusableCellProtocol {}
+extension UITableViewCell: ReusableCellProtocol {
+}
+
+extension UICollectionViewCell: ReusableCellProtocol {
+}

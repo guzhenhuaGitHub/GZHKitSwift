@@ -24,6 +24,7 @@ extension UserAuthorization {
                     : UIApplication.shared.unregisterForRemoteNotifications()
             }
         }
+
         /// 判断用户是否开放系统通知权限
         static func isEnabled(_ callback: @escaping (Bool) -> Void) {
             if #available(iOS 10.0, *) {

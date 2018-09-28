@@ -13,7 +13,7 @@ extension String {
     var path: String {
         guard
             let path = Bundle.main.path(forResource: self, ofType: nil)
-        else {
+            else {
             fatalError("no such file")
         }
         return path

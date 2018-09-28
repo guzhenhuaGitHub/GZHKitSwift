@@ -16,7 +16,9 @@ public extension DispatchQueue {
         if self === DispatchQueue.main && Thread.isMainThread {
             block()
         } else {
-            async { block() }
+            async {
+                block()
+            }
         }
     }
 }

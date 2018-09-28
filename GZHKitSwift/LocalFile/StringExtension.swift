@@ -20,11 +20,15 @@ public extension String {
         // 路径是否存在
         let exists = mgr.fileExists(atPath: self, isDirectory: &isDirectory)
         // 不存在 中断处理
-        if !exists { return size }
+        if !exists {
+            return size
+        }
         // 存在 继续处理
         if isDirectory.boolValue {
             // 获得文件夹的大小  == 获得文件夹中所有文件的总大小
-            guard let enumerator = mgr.enumerator(atPath: self) else { return size }
+            guard let enumerator = mgr.enumerator(atPath: self) else {
+                return size
+            }
             for subpath in enumerator {
                 // 全路径
                 if let subpath = subpath as? String {

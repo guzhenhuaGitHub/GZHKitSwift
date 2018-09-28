@@ -30,6 +30,7 @@ extension NSAttributedString {
         mutableLhs.append(rhs)
         return mutableLhs
     }
+
     static func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
         lhs = lhs + rhs
     }

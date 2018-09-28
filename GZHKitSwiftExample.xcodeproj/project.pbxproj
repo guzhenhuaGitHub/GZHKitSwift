@@ -25,7 +25,6 @@
 		58411402212E5F48001E27D3 /* AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58411401212E5F48001E27D3 /* AnyOf.swift */; };
 		5843AF0520BD4CA900488D93 /* LiteralDispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */; };
 		584D7E2C1EC19EFE00E3D1A6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */; };
-		587CF65B21130CFA00CF613B /* TableViewDelegateConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */; };
 		5887F7C52111462B00D582E4 /* DispatchQueue+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887F7C42111462B00D582E4 /* DispatchQueue+Extention.swift */; };
 		588BD8F920FC403900009790 /* SafeAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588BD8F820FC403900009790 /* SafeAsync.swift */; };
 		58B2B9022133A42E00D6258C /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2B9012133A42E00D6258C /* EnumMap.swift */; };
@@ -66,7 +65,6 @@
 		58411401212E5F48001E27D3 /* AnyOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyOf.swift; sourceTree = "<group>"; };
 		5843AF0420BD4CA900488D93 /* LiteralDispatchTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralDispatchTime.swift; sourceTree = "<group>"; };
 		584D7E2B1EC19EFE00E3D1A6 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateConvertable.swift; sourceTree = "<group>"; };
 		5887F7C42111462B00D582E4 /* DispatchQueue+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extention.swift"; sourceTree = "<group>"; };
 		588BD8F820FC403900009790 /* SafeAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAsync.swift; sourceTree = "<group>"; };
 		58B2B9012133A42E00D6258C /* EnumMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumMap.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				58B715D31EC04141004A2FA7 /* StoryboardExtension.swift */,
 				58B715D51EC04483004A2FA7 /* UITextField+Placeholder.swift */,
 				58B715CF1EC03E6C004A2FA7 /* WindowExtension.swift */,
-				587CF65A21130CFA00CF613B /* TableViewDelegateConvertable.swift */,
 			);
 			path = "UI+Extension";
 			sourceTree = "<group>";
@@ -456,7 +453,6 @@
 				583169E820A2CB8C003090FF /* RegularExpression.swift in Sources */,
 				5820CAF8212BB7D50006F54A /* ChildViewController.swift in Sources */,
 				58316A0720A2E046003090FF /* UIView+Frame.swift in Sources */,
-				587CF65B21130CFA00CF613B /* TableViewDelegateConvertable.swift in Sources */,
 				58316A0820A2E046003090FF /* UIScreen+Frame.swift in Sources */,
 				58BDC5E620C4E010005D8621 /* UserDefaults+Subscript.swift in Sources */,
 				58B2B9022133A42E00D6258C /* EnumMap.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 
 // 自定义操作符 =~
 // 定义优先级为比较运算类型等级
-infix operator =~ : ComparisonPrecedence
+infix operator =~: ComparisonPrecedence
 
 extension String {
     /// 正则表达式比较运算符
