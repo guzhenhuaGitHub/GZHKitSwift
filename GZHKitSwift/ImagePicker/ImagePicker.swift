@@ -19,7 +19,7 @@ public extension UIImagePickerController {
 // MARK: private
 extension UIImagePickerController {
 
-    private class func picker(with sourceType: UIImagePickerControllerSourceType) -> UIImagePickerController? {
+    private class func picker(with sourceType: UIImagePickerController.SourceType) -> UIImagePickerController? {
 
         var picker: UIImagePickerController?
 

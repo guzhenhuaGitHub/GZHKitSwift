@@ -32,9 +32,9 @@ extension UILabel {
 
 extension UIStackView {
     convenience init(
-        axis: UILayoutConstraintAxis,
-        distribution: UIStackViewDistribution = .fill,
-        alignment: UIStackViewAlignment = .fill,
+        axis: NSLayoutConstraint.Axis,
+        distribution: UIStackView.Distribution = .fill,
+        alignment: UIStackView.Alignment = .fill,
         spacing: CGFloat = 0
     ) {
         self.init()

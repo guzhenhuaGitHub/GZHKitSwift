@@ -40,7 +40,7 @@ extension UIViewController {
 }
 
 extension UITableView {
-    func scrollToRow(at indexPath: IndexPath, at scrollPosition: UITableViewScrollPosition) {
+    func scrollToRow(at indexPath: IndexPath, at scrollPosition: UITableView.ScrollPosition) {
         scrollToRow(at: indexPath, at: scrollPosition, animated: true)
     }
     func deselectRow(at indexPath: IndexPath) {
@@ -49,7 +49,7 @@ extension UITableView {
 }
 
 extension UICollectionView {
-    func scrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionViewScrollPosition) {
+    func scrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionView.ScrollPosition) {
         scrollToItem(at: indexPath, at: scrollPosition, animated: true)
     }
     func deselectItem(at indexPath: IndexPath) {

@@ -11,7 +11,7 @@ import UIKit
 // MARK: - 富文本
 extension String {
     func attributed(color: UIColor? = nil, fontSize: CGFloat? = nil, isBold: Bool = false) -> NSAttributedString {
-        var attributes: [NSAttributedStringKey: Any] = [:]
+        var attributes: [NSAttributedString.Key: Any] = [:]
         if let color = color {
             attributes[.foregroundColor] = color
         }
@@ -31,6 +31,6 @@ extension NSAttributedString {
         return mutableLhs
     }
     static func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
-        lhs += rhs
+        lhs = lhs + rhs
     }
 }
