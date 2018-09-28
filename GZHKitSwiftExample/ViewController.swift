@@ -14,10 +14,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let sliderBar = UISlider()
-        sliderBar.frame = CGRect(x: 100, y: 100, width: 200, height: 100)
-        sliderBar.setThumbImage(#imageLiteral(resourceName: "slider"), for: .normal)
-        view.addSubview(sliderBar)
-
     }
 }
