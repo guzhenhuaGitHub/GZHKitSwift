@@ -10,6 +10,5 @@ target 'Example' do
 
   # Pods for Example
   pod 'GZHKitSwift', path: '.'
-  pod 'SwiftLint'
 
 end

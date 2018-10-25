@@ -1,23 +1,16 @@
 PODS:
-  - GZHKitSwift (0.0.19)
-  - SwiftLint (0.27.0)
+  - GZHKitSwift (0.0.20)
 
 DEPENDENCIES:
   - GZHKitSwift (from `.`)
-  - SwiftLint
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - SwiftLint
 
 EXTERNAL SOURCES:
   GZHKitSwift:
     :path: "."
 
 SPEC CHECKSUMS:
-  GZHKitSwift: 631a51fd0734f08dde31cf5354281e73b90faa23
-  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  GZHKitSwift: 30b6ed14f4e2710cc688d1cb06a1fac5b980fed2
 
-PODFILE CHECKSUM: 2031218106e6fc918c2ca6443c4ed1aa3971d2b6
+PODFILE CHECKSUM: bb81458af81d496f166fc4216f032cba25671a3b
 
 COCOAPODS: 1.5.3
