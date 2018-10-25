@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name            = "GZHKitSwift"
-  s.version         = "0.0.19"
+  s.version         = "0.0.20"
   s.summary         = "个人开发swift所用的工具包"
   s.description     = <<-DESC
                       GZHKitSwift
