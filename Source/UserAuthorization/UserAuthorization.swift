@@ -10,7 +10,7 @@ import UIKit
 
 /// 用户授权
 struct UserAuthorization {
-    static let settingUrl = URL(string: UIApplication.openSettingsURLString)!
+    static let settingUrl = openSettingURL
 
     private init() {
     }
@@ -27,5 +27,15 @@ extension UserAuthorization {
         } else {
             UIApplication.shared.openURL(settingUrl)
         }
+    }
+
+    private static var openSettingURL: URL {
+        let openSettingsURLString: String
+        #if swift(>=4.2)
+        openSettingsURLString = UIApplication.openSettingsURLString
+        #else
+        openSettingsURLString = UIApplicationOpenSettingsURLString
+        #endif
+        return URL(string: openSettingsURLString)!
     }
 }

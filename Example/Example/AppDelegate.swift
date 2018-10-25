@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  GZHKitSwiftExample
+//  Example
 //
-//  Created by 顾振华 on 2017/5/8.
-//  Copyright © 2017年 顾振华. All rights reserved.
+//  Created by 顾振华 on 2018/10/25.
+//  Copyright © 2018 顾振华. All rights reserved.
 //
 
 import UIKit
@@ -20,5 +20,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
-
 }
