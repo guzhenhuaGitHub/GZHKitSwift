@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode10
+xcode_workspace: GZHKitSwift.xcworkspace
+xcode_scheme: ExampleTests
+env:
+    - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone X'
+
