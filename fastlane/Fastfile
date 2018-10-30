@@ -39,7 +39,7 @@ platform :ios do
     # 确保当前是 master 分支
     ensure_git_branch
     # 检查 Podspec 有效性
-    pod_lib_lint(allow_warnings: true)
+    pod_lib_lint(allow_warnings: true, use_libraries: true)
     #修改 podspec 版本号
     version_bump_podspec(version_number: options[:tag]) 
     # commit
