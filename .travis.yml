@@ -1,7 +1,6 @@
 language: objective-c
 osx_image: xcode10
-xcode_workspace: GZHKitSwift.xcworkspace
-xcode_scheme: GZHKitSwiftTests
-env:
-    - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone X'
-
+# xcode_workspace: GZHKitSwift.xcworkspace
+# xcode_scheme: GZHKitSwift
+script:
+  - fastlane scan
