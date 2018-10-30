@@ -22,7 +22,6 @@ platform :ios do
     git_pull
   end
 
-
   desc "查看当前版本号"
   lane :version do
     version_to_string = "current podspec version is v#{version_get_podspec}"
@@ -49,7 +48,7 @@ platform :ios do
     # push 本地 tags
     push_git_tags 
     # push podspec 到仓库
-    pod_push(allow_warnings: true) 
+    pod_push(allow_warnings: true, use_libraries: true) 
   end
 
   desc "提交代码到远程仓库"
