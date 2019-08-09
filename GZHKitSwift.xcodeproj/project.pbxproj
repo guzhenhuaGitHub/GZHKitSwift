@@ -64,6 +64,7 @@
 		13E669B522FD7CED00256258 /* Sequence+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Math.swift"; sourceTree = "<group>"; };
 		13E669B622FD7CED00256258 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
 		13E669B822FD7E0B00256258 /* UIView+roundCornerMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+roundCornerMask.swift"; sourceTree = "<group>"; };
+		13E669BA22FD7ED400256258 /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
 		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
@@ -145,6 +146,14 @@
 			path = "UIView+mask";
 			sourceTree = "<group>";
 		};
+		13E669B922FD7ED400256258 /* NotificationToken */ = {
+			isa = PBXGroup;
+			children = (
+				13E669BA22FD7ED400256258 /* NotificationToken.swift */,
+			);
+			path = NotificationToken;
+			sourceTree = "<group>";
+		};
 		528304279236DCA0EE8F017B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,25 +186,26 @@
 		58E7DF7721870FAC0034972D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				13E669B722FD7E0B00256258 /* UIView+mask */,
-				13E669B322FD7CD200256258 /* ExpressibleByLiteral */,
-				13E669B122FD7C5900256258 /* Sequence */,
 				58E7DF802187102C0034972D /* AttributedString */,
 				58E7DF962187102D0034972D /* Color */,
 				58E7DF8C2187102C0034972D /* ConvenienceOperation */,
 				58E7DF9B2187102D0034972D /* Device */,
 				58E7DF942187102C0034972D /* EnumMap */,
+				13E669B322FD7CD200256258 /* ExpressibleByLiteral */,
 				58E7DFA52187102D0034972D /* GCD */,
 				58E7DF9D2187102D0034972D /* GZHKit.swift */,
+				58E7DF7821870FAC0034972D /* GZHKitSwift.h */,
 				58E7DF822187102C0034972D /* Image */,
 				58E7DFAA2187102D0034972D /* ImagePicker */,
+				58E7DF7921870FAC0034972D /* Info.plist */,
 				58E7DF9E2187102D0034972D /* LocalFile */,
+				13E669B922FD7ED400256258 /* NotificationToken */,
+				13E669B122FD7C5900256258 /* Sequence */,
 				58E7DF842187102C0034972D /* UI+Extension */,
+				13E669B722FD7E0B00256258 /* UIView+mask */,
 				58E7DF982187102D0034972D /* UserAuthorization */,
 				58E7DFAC2187102D0034972D /* UserDefaults */,
 				58E7DFA22187102D0034972D /* ViewController */,
-				58E7DF7821870FAC0034972D /* GZHKitSwift.h */,
-				58E7DF7921870FAC0034972D /* Info.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
