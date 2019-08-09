@@ -63,6 +63,7 @@
 		13E669B422FD7CD200256258 /* NotificationName+StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+StringLiteral.swift"; sourceTree = "<group>"; };
 		13E669B522FD7CED00256258 /* Sequence+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Math.swift"; sourceTree = "<group>"; };
 		13E669B622FD7CED00256258 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
+		13E669B822FD7E0B00256258 /* UIView+roundCornerMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+roundCornerMask.swift"; sourceTree = "<group>"; };
 		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
@@ -136,6 +137,14 @@
 			path = ExpressibleByLiteral;
 			sourceTree = "<group>";
 		};
+		13E669B722FD7E0B00256258 /* UIView+mask */ = {
+			isa = PBXGroup;
+			children = (
+				13E669B822FD7E0B00256258 /* UIView+roundCornerMask.swift */,
+			);
+			path = "UIView+mask";
+			sourceTree = "<group>";
+		};
 		528304279236DCA0EE8F017B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +177,7 @@
 		58E7DF7721870FAC0034972D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				13E669B722FD7E0B00256258 /* UIView+mask */,
 				13E669B322FD7CD200256258 /* ExpressibleByLiteral */,
 				13E669B122FD7C5900256258 /* Sequence */,
 				58E7DF802187102C0034972D /* AttributedString */,
