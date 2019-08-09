@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C7E393C70DD0633E03805A2 /* Pods_GZHKitSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734E0E15C2D60BB43D6EFD44 /* Pods_GZHKitSwift.framework */; };
+		35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */; };
 		58E7DF7A21870FAC0034972D /* GZHKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E7DF7821870FAC0034972D /* GZHKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58E7DFAE2187102D0034972D /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF812187102C0034972D /* AttributedString.swift */; };
 		58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF832187102C0034972D /* UIImage+Color.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		0303B2E2A1938DE5FF460C93 /* Pods-GZHKitSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift/Pods-GZHKitSwift.release.xcconfig"; sourceTree = "<group>"; };
 		12529D770B0D3F88E4AF1C61 /* Pods-GZHKitSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift/Pods-GZHKitSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
 		58E7DF7921870FAC0034972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 		58E7DFE22187141F0034972D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		58E7DFE42187141F0034972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734E0E15C2D60BB43D6EFD44 /* Pods_GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB4A07F57D547A9B49830D2 /* Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZHKitSwift_GZHKitSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E7DFE52187141F0034972D /* GZHKitSwift.framework in Frameworks */,
+				35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				734E0E15C2D60BB43D6EFD44 /* Pods_GZHKitSwift.framework */,
+				D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 			children = (
 				12529D770B0D3F88E4AF1C61 /* Pods-GZHKitSwift.debug.xcconfig */,
 				0303B2E2A1938DE5FF460C93 /* Pods-GZHKitSwift.release.xcconfig */,
+				1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */,
+				8FB4A07F57D547A9B49830D2 /* Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -360,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E7DFE82187141F0034972D /* Build configuration list for PBXNativeTarget "GZHKitSwiftTests" */;
 			buildPhases = (
+				8DB4B85B42779DEF174FD7A1 /* [CP] Check Pods Manifest.lock */,
 				58E7DFDC2187141F0034972D /* Sources */,
 				58E7DFDD2187141F0034972D /* Frameworks */,
 				58E7DFDE2187141F0034972D /* Resources */,
@@ -445,6 +454,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GZHKitSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB4B85B42779DEF174FD7A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GZHKitSwift-GZHKitSwiftTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -688,6 +719,7 @@
 		};
 		58E7DFE92187141F0034972D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -705,6 +737,7 @@
 		};
 		58E7DFEA2187141F0034972D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB4A07F57D547A9B49830D2 /* Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
