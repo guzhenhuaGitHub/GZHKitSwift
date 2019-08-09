@@ -59,6 +59,10 @@
 		130DC87922FD1D3A00C80E90 /* AttributeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeBuilder.swift; sourceTree = "<group>"; };
 		130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributed.swift"; sourceTree = "<group>"; };
 		130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringConvertable.swift; sourceTree = "<group>"; };
+		13E669B222FD7C6F00256258 /* Sequence+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+KeyPath.swift"; sourceTree = "<group>"; };
+		13E669B422FD7CD200256258 /* NotificationName+StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+StringLiteral.swift"; sourceTree = "<group>"; };
+		13E669B522FD7CED00256258 /* Sequence+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Math.swift"; sourceTree = "<group>"; };
+		13E669B622FD7CED00256258 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
 		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
@@ -114,6 +118,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E669B122FD7C5900256258 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				13E669B522FD7CED00256258 /* Sequence+Math.swift */,
+				13E669B622FD7CED00256258 /* Sequence+Unique.swift */,
+				13E669B222FD7C6F00256258 /* Sequence+KeyPath.swift */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		13E669B322FD7CD200256258 /* ExpressibleByLiteral */ = {
+			isa = PBXGroup;
+			children = (
+				13E669B422FD7CD200256258 /* NotificationName+StringLiteral.swift */,
+			);
+			path = ExpressibleByLiteral;
+			sourceTree = "<group>";
+		};
 		528304279236DCA0EE8F017B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +168,8 @@
 		58E7DF7721870FAC0034972D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				13E669B322FD7CD200256258 /* ExpressibleByLiteral */,
+				13E669B122FD7C5900256258 /* Sequence */,
 				58E7DF802187102C0034972D /* AttributedString */,
 				58E7DF962187102D0034972D /* Color */,
 				58E7DF8C2187102C0034972D /* ConvenienceOperation */,
