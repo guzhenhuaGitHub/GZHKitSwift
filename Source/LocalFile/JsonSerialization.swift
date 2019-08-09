@@ -13,8 +13,7 @@ extension Data {
     var toJson: Any {
         var json: Any?
         do {
-            json = try JSONSerialization
-                .jsonObject(with: self, options: JSONSerialization.ReadingOptions.mutableContainers)
+            json = try JSONSerialization.jsonObject(with: self, options: .mutableContainers)
         } catch let error as NSError {
             fatalError("Error: \(error.localizedDescription)")
         }

@@ -13,7 +13,7 @@ public extension UIColor {
     /// color with hex string
     ///
     /// - Parameter hexadecimal: hexadecimal code of color
-    public convenience init(hexadecimal: String) {
+    convenience init(hexadecimal: String) {
         // 删除头尾的多余字符
         let formatted = hexadecimal
             .replacingOccurrences(of: "[^0-9a-fA-F]*$", with: "", options: .regularExpression)

@@ -13,7 +13,7 @@ private struct KeyPath {
 }
 
 public extension GZHKit where Base: UITextField {
-    public var placeholderColor: UIColor? {
+    var placeholderColor: UIColor? {
         get {
             return base.value(forKeyPath: KeyPath.placeholderColor) as? UIColor
         }

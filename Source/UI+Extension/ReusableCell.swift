@@ -17,16 +17,16 @@ public protocol ReusableCellProtocol {
 }
 
 public extension ReusableCellProtocol {
-    public static var reuseIdentifier: String {
+    static var reuseIdentifier: String {
         return "\(Self.self)"
     }
-    public static var nib: UINib {
+    static var nib: UINib {
         return UINib(nibName: "\(Self.self)", bundle: nil)
     }
 }
 
 public extension ReusableCellProtocol where Self: UITableViewCell {
-    public static func xibCell(reuseFrom tableView: UITableView) -> Self? {
+    static func xibCell(reuseFrom tableView: UITableView) -> Self? {
         var xibCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? Self
         if xibCell == nil {
             tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)

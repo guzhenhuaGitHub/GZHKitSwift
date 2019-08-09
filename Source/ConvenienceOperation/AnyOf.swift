@@ -22,6 +22,7 @@
 import Foundation
 
 struct EquatableValueSequence<T: Equatable> {
+
     static func == (lhs: EquatableValueSequence<T>, rhs: T) -> Bool {
         return lhs.values.contains(rhs)
     }

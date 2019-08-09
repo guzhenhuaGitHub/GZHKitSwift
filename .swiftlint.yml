@@ -3,48 +3,72 @@ excluded: # 执行 linting 时忽略的路径。 优先级比 `included` 更高�
   - Pods
 
 disabled_rules: # 禁止默认规则
-  - function_body_length
-  - file_length
-  - type_name
+  - identifier_name
   - line_length
-  - shorthand_operator
-  - large_tuple
+  - function_body_length
+  - trailing_whitespace
   - cyclomatic_complexity
-  - block_based_kvo
+  - type_body_length
+  - file_length
+  - large_tuple
+  - type_name
+  - function_parameter_count
 
 opt_in_rules: # 开启可选规则
   - array_init
+  - attributes
   - closure_end_indentation
   - closure_spacing
+  - collection_alignment
   - contains_over_first_not_nil
-  - discouraged_object_literal
+  - convenience_type
   - discouraged_optional_boolean
+  # bug || - empty_count
   - empty_string
   - explicit_init
+  - explicit_self
   - fallthrough
   - fatal_error_message
   - first_where
+  - force_unwrapping
+  - identical_operands
+  - implicit_return
+  - is_disjoint
   - joined_default_parameter
-  - multiline_parameters
-  - nimble_operator
+  - last_where
+  - legacy_random
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - modifier_order
+  - nsobject_prefer_isequal
   - operator_usage_whitespace
-  - overridden_super_call
   - pattern_matching_keywords
-  - prefixed_toplevel_constant
+  - prohibited_super_call
+  - protocol_property_accessors_order
+  - reduce_boolean
+  - reduce_into
   - redundant_nil_coalescing
-  - required_enum_case
+  - redundant_objc_attribute
+  - redundant_type_annotation
   - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - toggle_bool
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - untyped_error_in_catch
+  - unused_import
+  - unused_private_declaration
+  - vertical_parameter_alignment_on_call
 
 identifier_name:
   min_length:
     warning: 0
-  excluded: # 排除某些名字
-    - i
-    - x
-    - y
-    - id
-    - a
-    - r
-    - g
-    - b
-    - vc
+  # excluded: # 排除某些名字
+attributes:
+  always_on_same_line:
+    - "@IBAction"
+    - "@NSManaged"
+    - "@objc"
+nesting:
+  type_level: 2

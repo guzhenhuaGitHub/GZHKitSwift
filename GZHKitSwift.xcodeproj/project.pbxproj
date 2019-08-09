@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C7E393C70DD0633E03805A2 /* Pods_GZHKitSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734E0E15C2D60BB43D6EFD44 /* Pods_GZHKitSwift.framework */; };
+		130DC87C22FD1D4400C80E90 /* AtrributedString+Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87722FD1D3A00C80E90 /* AtrributedString+Combination.swift */; };
+		130DC87D22FD1D4400C80E90 /* AttributeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87922FD1D3A00C80E90 /* AttributeBuilder.swift */; };
+		130DC87E22FD1D4400C80E90 /* AttributedStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */; };
+		130DC87F22FD1D4400C80E90 /* AttributeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87822FD1D3A00C80E90 /* AttributeType.swift */; };
+		130DC88022FD1D4400C80E90 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */; };
 		35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */; };
 		58E7DF7A21870FAC0034972D /* GZHKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E7DF7821870FAC0034972D /* GZHKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58E7DFAE2187102D0034972D /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF812187102C0034972D /* AttributedString.swift */; };
 		58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF832187102C0034972D /* UIImage+Color.swift */; };
 		58E7DFB02187102D0034972D /* ConvenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF852187102C0034972D /* ConvenienceInit.swift */; };
 		58E7DFB12187102D0034972D /* WindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF862187102C0034972D /* WindowExtension.swift */; };
@@ -21,8 +25,6 @@
 		58E7DFB62187102D0034972D /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8B2187102C0034972D /* StoryboardExtension.swift */; };
 		58E7DFB72187102D0034972D /* AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8D2187102C0034972D /* AnyOf.swift */; };
 		58E7DFB82187102D0034972D /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8E2187102C0034972D /* RegularExpression.swift */; };
-		58E7DFB92187102D0034972D /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF902187102C0034972D /* UIView+Frame.swift */; };
-		58E7DFBA2187102D0034972D /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF912187102C0034972D /* UIScreen+Frame.swift */; };
 		58E7DFBB2187102D0034972D /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF932187102C0034972D /* Validations.swift */; };
 		58E7DFBC2187102D0034972D /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF952187102C0034972D /* EnumMap.swift */; };
 		58E7DFBD2187102D0034972D /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF972187102D0034972D /* HexColor.swift */; };
@@ -58,11 +60,15 @@
 /* Begin PBXFileReference section */
 		0303B2E2A1938DE5FF460C93 /* Pods-GZHKitSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift/Pods-GZHKitSwift.release.xcconfig"; sourceTree = "<group>"; };
 		12529D770B0D3F88E4AF1C61 /* Pods-GZHKitSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift/Pods-GZHKitSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		130DC87722FD1D3A00C80E90 /* AtrributedString+Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtrributedString+Combination.swift"; sourceTree = "<group>"; };
+		130DC87822FD1D3A00C80E90 /* AttributeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeType.swift; sourceTree = "<group>"; };
+		130DC87922FD1D3A00C80E90 /* AttributeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeBuilder.swift; sourceTree = "<group>"; };
+		130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributed.swift"; sourceTree = "<group>"; };
+		130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringConvertable.swift; sourceTree = "<group>"; };
 		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
 		58E7DF7921870FAC0034972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58E7DF812187102C0034972D /* AttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		58E7DF832187102C0034972D /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		58E7DF852187102C0034972D /* ConvenienceInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceInit.swift; sourceTree = "<group>"; };
 		58E7DF862187102C0034972D /* WindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowExtension.swift; sourceTree = "<group>"; };
@@ -73,8 +79,6 @@
 		58E7DF8B2187102C0034972D /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		58E7DF8D2187102C0034972D /* AnyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOf.swift; sourceTree = "<group>"; };
 		58E7DF8E2187102C0034972D /* RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
-		58E7DF902187102C0034972D /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		58E7DF912187102C0034972D /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
 		58E7DF932187102C0034972D /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		58E7DF952187102C0034972D /* EnumMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMap.swift; sourceTree = "<group>"; };
 		58E7DF972187102D0034972D /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
@@ -159,7 +163,6 @@
 				58E7DF8C2187102C0034972D /* ConvenienceOperation */,
 				58E7DF9B2187102D0034972D /* Device */,
 				58E7DF942187102C0034972D /* EnumMap */,
-				58E7DF8F2187102C0034972D /* Frame */,
 				58E7DFA52187102D0034972D /* GCD */,
 				58E7DF9D2187102D0034972D /* GZHKit.swift */,
 				58E7DF822187102C0034972D /* Image */,
@@ -179,7 +182,11 @@
 		58E7DF802187102C0034972D /* AttributedString */ = {
 			isa = PBXGroup;
 			children = (
-				58E7DF812187102C0034972D /* AttributedString.swift */,
+				130DC87722FD1D3A00C80E90 /* AtrributedString+Combination.swift */,
+				130DC87922FD1D3A00C80E90 /* AttributeBuilder.swift */,
+				130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */,
+				130DC87822FD1D3A00C80E90 /* AttributeType.swift */,
+				130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */,
 			);
 			path = AttributedString;
 			sourceTree = "<group>";
@@ -213,15 +220,6 @@
 				58E7DF8E2187102C0034972D /* RegularExpression.swift */,
 			);
 			path = ConvenienceOperation;
-			sourceTree = "<group>";
-		};
-		58E7DF8F2187102C0034972D /* Frame */ = {
-			isa = PBXGroup;
-			children = (
-				58E7DF902187102C0034972D /* UIView+Frame.swift */,
-				58E7DF912187102C0034972D /* UIScreen+Frame.swift */,
-			);
-			path = Frame;
 			sourceTree = "<group>";
 		};
 		58E7DF922187102C0034972D /* Validations */ = {
@@ -408,6 +406,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 58E7DF6B21870FAC0034972D;
 			productRefGroup = 58E7DF7621870FAC0034972D /* Products */;
@@ -490,30 +489,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E7DFC22187102D0034972D /* JsonSerialization.swift in Sources */,
+				130DC87C22FD1D4400C80E90 /* AtrributedString+Combination.swift in Sources */,
 				58E7DFB52187102D0034972D /* ReusableCell.swift in Sources */,
 				58E7DFBC2187102D0034972D /* EnumMap.swift in Sources */,
-				58E7DFAE2187102D0034972D /* AttributedString.swift in Sources */,
 				58E7DFB22187102D0034972D /* BarButtonItemExtension.swift in Sources */,
 				58E7DFBF2187102D0034972D /* UserAuthorization.swift in Sources */,
+				130DC87F22FD1D4400C80E90 /* AttributeType.swift in Sources */,
 				58E7DFC82187102D0034972D /* Delay.swift in Sources */,
 				58E7DFB42187102D0034972D /* DefaultAnimated.swift in Sources */,
 				58E7DFB62187102D0034972D /* StoryboardExtension.swift in Sources */,
 				58E7DFB12187102D0034972D /* WindowExtension.swift in Sources */,
 				58E7DFC12187102D0034972D /* GZHKit.swift in Sources */,
+				130DC88022FD1D4400C80E90 /* String+Attributed.swift in Sources */,
 				58E7DFBB2187102D0034972D /* Validations.swift in Sources */,
+				130DC87D22FD1D4400C80E90 /* AttributeBuilder.swift in Sources */,
 				58E7DFCA2187102D0034972D /* LiteralDispatchTime.swift in Sources */,
 				58E7DFB32187102D0034972D /* UITextField+Placeholder.swift in Sources */,
 				58E7DFB82187102D0034972D /* RegularExpression.swift in Sources */,
-				58E7DFBA2187102D0034972D /* UIScreen+Frame.swift in Sources */,
 				58E7DFC42187102D0034972D /* FileContent.swift in Sources */,
 				58E7DFBE2187102D0034972D /* RemoteNotification.swift in Sources */,
+				130DC87E22FD1D4400C80E90 /* AttributedStringConvertable.swift in Sources */,
 				58E7DFC62187102D0034972D /* ChildViewController.swift in Sources */,
 				58E7DFCC2187102D0034972D /* UserDefaults+Subscript.swift in Sources */,
 				58E7DFC52187102D0034972D /* CurrentViewController.swift in Sources */,
 				58E7DFC92187102D0034972D /* SafeAsync.swift in Sources */,
 				58E7DFC72187102D0034972D /* DispatchQueue+Extention.swift in Sources */,
 				58E7DFC02187102D0034972D /* IphoneName.swift in Sources */,
-				58E7DFB92187102D0034972D /* UIView+Frame.swift in Sources */,
 				58E7DFB72187102D0034972D /* AnyOf.swift in Sources */,
 				58E7DFBD2187102D0034972D /* HexColor.swift in Sources */,
 				58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */,
@@ -686,7 +687,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -712,7 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guzhenhuaB5.GZHKitSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

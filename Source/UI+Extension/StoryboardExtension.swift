@@ -9,15 +9,15 @@
 import UIKit.UIStoryboard
 
 public extension GZHKit where Base: UIStoryboard {
-    public static func viewController(_ identifier: String, in storyboardName: String) -> UIViewController {
+    static func viewController(_ identifier: String, in storyboardName: String) -> UIViewController {
         return UIStoryboard(name: storyboardName, bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
 
-    public static func viewControllerInMainStoryboard(with identifier: String) -> UIViewController {
+    static func viewControllerInMainStoryboard(with identifier: String) -> UIViewController {
         return Base.gzh.viewController(identifier, in: "main")
     }
 
-    public static func initialViewController(in storyboardName: String) -> UIViewController? {
+    static func initialViewController(in storyboardName: String) -> UIViewController? {
         return UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
     }
 }

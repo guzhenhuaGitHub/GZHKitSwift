@@ -9,9 +9,11 @@
 import Foundation
 
 struct EnumMap<Enum: CaseIterable & Hashable, Value> {
+
     private let values: [Enum: Value]
 
     init(resolver: (Enum) -> Value) {
+
         var values = [Enum: Value]()
 
         for key in Enum.allCases {
