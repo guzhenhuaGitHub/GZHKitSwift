@@ -16,25 +16,19 @@
 		35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */; };
 		58E7DF7A21870FAC0034972D /* GZHKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E7DF7821870FAC0034972D /* GZHKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF832187102C0034972D /* UIImage+Color.swift */; };
-		58E7DFB02187102D0034972D /* ConvenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF852187102C0034972D /* ConvenienceInit.swift */; };
 		58E7DFB12187102D0034972D /* WindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF862187102C0034972D /* WindowExtension.swift */; };
-		58E7DFB22187102D0034972D /* BarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF872187102C0034972D /* BarButtonItemExtension.swift */; };
 		58E7DFB32187102D0034972D /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF882187102C0034972D /* UITextField+Placeholder.swift */; };
 		58E7DFB42187102D0034972D /* DefaultAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF892187102C0034972D /* DefaultAnimated.swift */; };
-		58E7DFB52187102D0034972D /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8A2187102C0034972D /* ReusableCell.swift */; };
 		58E7DFB62187102D0034972D /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8B2187102C0034972D /* StoryboardExtension.swift */; };
 		58E7DFB72187102D0034972D /* AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8D2187102C0034972D /* AnyOf.swift */; };
 		58E7DFB82187102D0034972D /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF8E2187102C0034972D /* RegularExpression.swift */; };
-		58E7DFBB2187102D0034972D /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF932187102C0034972D /* Validations.swift */; };
 		58E7DFBC2187102D0034972D /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF952187102C0034972D /* EnumMap.swift */; };
 		58E7DFBD2187102D0034972D /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF972187102D0034972D /* HexColor.swift */; };
 		58E7DFBE2187102D0034972D /* RemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF992187102D0034972D /* RemoteNotification.swift */; };
 		58E7DFBF2187102D0034972D /* UserAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF9A2187102D0034972D /* UserAuthorization.swift */; };
 		58E7DFC02187102D0034972D /* IphoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF9C2187102D0034972D /* IphoneName.swift */; };
 		58E7DFC12187102D0034972D /* GZHKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF9D2187102D0034972D /* GZHKit.swift */; };
-		58E7DFC22187102D0034972D /* JsonSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF9F2187102D0034972D /* JsonSerialization.swift */; };
 		58E7DFC32187102D0034972D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFA02187102D0034972D /* StringExtension.swift */; };
-		58E7DFC42187102D0034972D /* FileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFA12187102D0034972D /* FileContent.swift */; };
 		58E7DFC52187102D0034972D /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFA32187102D0034972D /* CurrentViewController.swift */; };
 		58E7DFC62187102D0034972D /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFA42187102D0034972D /* ChildViewController.swift */; };
 		58E7DFC72187102D0034972D /* DispatchQueue+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFA62187102D0034972D /* DispatchQueue+Extention.swift */; };
@@ -70,25 +64,19 @@
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
 		58E7DF7921870FAC0034972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E7DF832187102C0034972D /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
-		58E7DF852187102C0034972D /* ConvenienceInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceInit.swift; sourceTree = "<group>"; };
 		58E7DF862187102C0034972D /* WindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowExtension.swift; sourceTree = "<group>"; };
-		58E7DF872187102C0034972D /* BarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemExtension.swift; sourceTree = "<group>"; };
 		58E7DF882187102C0034972D /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		58E7DF892187102C0034972D /* DefaultAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAnimated.swift; sourceTree = "<group>"; };
-		58E7DF8A2187102C0034972D /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		58E7DF8B2187102C0034972D /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		58E7DF8D2187102C0034972D /* AnyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOf.swift; sourceTree = "<group>"; };
 		58E7DF8E2187102C0034972D /* RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
-		58E7DF932187102C0034972D /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		58E7DF952187102C0034972D /* EnumMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMap.swift; sourceTree = "<group>"; };
 		58E7DF972187102D0034972D /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		58E7DF992187102D0034972D /* RemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotification.swift; sourceTree = "<group>"; };
 		58E7DF9A2187102D0034972D /* UserAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthorization.swift; sourceTree = "<group>"; };
 		58E7DF9C2187102D0034972D /* IphoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IphoneName.swift; sourceTree = "<group>"; };
 		58E7DF9D2187102D0034972D /* GZHKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZHKit.swift; sourceTree = "<group>"; };
-		58E7DF9F2187102D0034972D /* JsonSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerialization.swift; sourceTree = "<group>"; };
 		58E7DFA02187102D0034972D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		58E7DFA12187102D0034972D /* FileContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileContent.swift; sourceTree = "<group>"; };
 		58E7DFA32187102D0034972D /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		58E7DFA42187102D0034972D /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		58E7DFA62187102D0034972D /* DispatchQueue+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extention.swift"; sourceTree = "<group>"; };
@@ -171,7 +159,6 @@
 				58E7DF842187102C0034972D /* UI+Extension */,
 				58E7DF982187102D0034972D /* UserAuthorization */,
 				58E7DFAC2187102D0034972D /* UserDefaults */,
-				58E7DF922187102C0034972D /* Validations */,
 				58E7DFA22187102D0034972D /* ViewController */,
 				58E7DF7821870FAC0034972D /* GZHKitSwift.h */,
 				58E7DF7921870FAC0034972D /* Info.plist */,
@@ -202,12 +189,9 @@
 		58E7DF842187102C0034972D /* UI+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				58E7DF852187102C0034972D /* ConvenienceInit.swift */,
 				58E7DF862187102C0034972D /* WindowExtension.swift */,
-				58E7DF872187102C0034972D /* BarButtonItemExtension.swift */,
 				58E7DF882187102C0034972D /* UITextField+Placeholder.swift */,
 				58E7DF892187102C0034972D /* DefaultAnimated.swift */,
-				58E7DF8A2187102C0034972D /* ReusableCell.swift */,
 				58E7DF8B2187102C0034972D /* StoryboardExtension.swift */,
 			);
 			path = "UI+Extension";
@@ -220,14 +204,6 @@
 				58E7DF8E2187102C0034972D /* RegularExpression.swift */,
 			);
 			path = ConvenienceOperation;
-			sourceTree = "<group>";
-		};
-		58E7DF922187102C0034972D /* Validations */ = {
-			isa = PBXGroup;
-			children = (
-				58E7DF932187102C0034972D /* Validations.swift */,
-			);
-			path = Validations;
 			sourceTree = "<group>";
 		};
 		58E7DF942187102C0034972D /* EnumMap */ = {
@@ -266,9 +242,7 @@
 		58E7DF9E2187102D0034972D /* LocalFile */ = {
 			isa = PBXGroup;
 			children = (
-				58E7DF9F2187102D0034972D /* JsonSerialization.swift */,
 				58E7DFA02187102D0034972D /* StringExtension.swift */,
-				58E7DFA12187102D0034972D /* FileContent.swift */,
 			);
 			path = LocalFile;
 			sourceTree = "<group>";
@@ -488,11 +462,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E7DFC22187102D0034972D /* JsonSerialization.swift in Sources */,
 				130DC87C22FD1D4400C80E90 /* AtrributedString+Combination.swift in Sources */,
-				58E7DFB52187102D0034972D /* ReusableCell.swift in Sources */,
 				58E7DFBC2187102D0034972D /* EnumMap.swift in Sources */,
-				58E7DFB22187102D0034972D /* BarButtonItemExtension.swift in Sources */,
 				58E7DFBF2187102D0034972D /* UserAuthorization.swift in Sources */,
 				130DC87F22FD1D4400C80E90 /* AttributeType.swift in Sources */,
 				58E7DFC82187102D0034972D /* Delay.swift in Sources */,
@@ -501,12 +472,10 @@
 				58E7DFB12187102D0034972D /* WindowExtension.swift in Sources */,
 				58E7DFC12187102D0034972D /* GZHKit.swift in Sources */,
 				130DC88022FD1D4400C80E90 /* String+Attributed.swift in Sources */,
-				58E7DFBB2187102D0034972D /* Validations.swift in Sources */,
 				130DC87D22FD1D4400C80E90 /* AttributeBuilder.swift in Sources */,
 				58E7DFCA2187102D0034972D /* LiteralDispatchTime.swift in Sources */,
 				58E7DFB32187102D0034972D /* UITextField+Placeholder.swift in Sources */,
 				58E7DFB82187102D0034972D /* RegularExpression.swift in Sources */,
-				58E7DFC42187102D0034972D /* FileContent.swift in Sources */,
 				58E7DFBE2187102D0034972D /* RemoteNotification.swift in Sources */,
 				130DC87E22FD1D4400C80E90 /* AttributedStringConvertable.swift in Sources */,
 				58E7DFC62187102D0034972D /* ChildViewController.swift in Sources */,
@@ -520,7 +489,6 @@
 				58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */,
 				58E7DFCB2187102D0034972D /* ImagePicker.swift in Sources */,
 				58E7DFC32187102D0034972D /* StringExtension.swift in Sources */,
-				58E7DFB02187102D0034972D /* ConvenienceInit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
