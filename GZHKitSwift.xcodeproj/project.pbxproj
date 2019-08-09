@@ -13,6 +13,7 @@
 		130DC87E22FD1D4400C80E90 /* AttributedStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */; };
 		130DC87F22FD1D4400C80E90 /* AttributeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87822FD1D3A00C80E90 /* AttributeType.swift */; };
 		130DC88022FD1D4400C80E90 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */; };
+		13E669BC22FD955000256258 /* PopGestureConflictProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E669BB22FD955000256258 /* PopGestureConflictProtocol.swift */; };
 		35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */; };
 		58E7DF7A21870FAC0034972D /* GZHKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E7DF7821870FAC0034972D /* GZHKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DF832187102C0034972D /* UIImage+Color.swift */; };
@@ -65,6 +66,7 @@
 		13E669B622FD7CED00256258 /* Sequence+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Unique.swift"; sourceTree = "<group>"; };
 		13E669B822FD7E0B00256258 /* UIView+roundCornerMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+roundCornerMask.swift"; sourceTree = "<group>"; };
 		13E669BA22FD7ED400256258 /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		13E669BB22FD955000256258 /* PopGestureConflictProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGestureConflictProtocol.swift; sourceTree = "<group>"; };
 		1B3B7040622FBBA9ACA378A6 /* Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E7DF7521870FAC0034972D /* GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DF7821870FAC0034972D /* GZHKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZHKitSwift.h; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				58E7DF7921870FAC0034972D /* Info.plist */,
 				58E7DF9E2187102D0034972D /* LocalFile */,
 				13E669B922FD7ED400256258 /* NotificationToken */,
+				13E669BB22FD955000256258 /* PopGestureConflictProtocol.swift */,
 				13E669B122FD7C5900256258 /* Sequence */,
 				58E7DF842187102C0034972D /* UI+Extension */,
 				13E669B722FD7E0B00256258 /* UIView+mask */,
@@ -532,6 +535,7 @@
 				58E7DFBD2187102D0034972D /* HexColor.swift in Sources */,
 				58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */,
 				58E7DFCB2187102D0034972D /* ImagePicker.swift in Sources */,
+				13E669BC22FD955000256258 /* PopGestureConflictProtocol.swift in Sources */,
 				58E7DFC32187102D0034972D /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
