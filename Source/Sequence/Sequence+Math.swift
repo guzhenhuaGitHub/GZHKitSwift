@@ -8,13 +8,27 @@
 
 import Foundation
 
-public extension Sequence where Element: RawRepresentable & Equatable {
-    /// 求交集
-    static func + (lhs: Self, rhs: Self) -> [Iterator.Element] {
-        return lhs.filter(rhs.contains)
+public extension Array where Element: Equatable {
+
+    /// 数组相加
+    static func + (lhs: [Element], rhs: [Element]) -> [Element] {
+        var result = lhs
+        result.append(contentsOf: rhs)
+        return result
     }
-    /// 求差集
-    static func - (lhs: Self, rhs: Self) -> [Iterator.Element] {
+
+    /// 数组相加
+    static func += (lhs: inout [Element], rhs: [Element]) {
+        return lhs = lhs + rhs
+    }
+
+    /// 数组相减
+    static func - (lhs: [Element], rhs: [Element]) -> [Element] {
         return lhs.filter { rhs.contains($0) == false }
+    }
+
+    /// 数组相减
+    static func -= (lhs: inout [Element], rhs: [Element]) {
+        lhs = lhs - rhs
     }
 }

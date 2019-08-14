@@ -37,7 +37,11 @@ extension UserAuthorization {
                 }
             } else {
                 // 判断用户是否开启通知权限
-                callback(UIApplication.shared.currentUserNotificationSettings?.types != .none)
+                guard let types = UIApplication.shared.currentUserNotificationSettings?.types else {
+                    callback(false)
+                    return
+                }
+                callback(types != [])
             }
         }
     }

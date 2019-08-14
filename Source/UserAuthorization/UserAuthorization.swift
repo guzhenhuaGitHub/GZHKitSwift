@@ -10,10 +10,10 @@ import UIKit
 
 /// 用户授权
 struct UserAuthorization {
-    static let settingUrl = openSettingURL
 
-    private init() {
-    }
+    static let settingUrl = openSettingURL
+    private init() {}
+
 }
 
 extension UserAuthorization {
