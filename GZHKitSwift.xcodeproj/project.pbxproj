@@ -40,6 +40,7 @@
 		58E7DFCC2187102D0034972D /* UserDefaults+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFAD2187102D0034972D /* UserDefaults+Subscript.swift */; };
 		58E7DFE32187141F0034972D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7DFE22187141F0034972D /* Tests.swift */; };
 		58E7DFE52187141F0034972D /* GZHKitSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E7DF7521870FAC0034972D /* GZHKitSwift.framework */; };
+		5E27BC1D764660271F81BB91 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27B89353AA3EBB4AFB71C8 /* Configure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		58E7DFE02187141F0034972D /* GZHKitSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZHKitSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E7DFE22187141F0034972D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		58E7DFE42187141F0034972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E27B89353AA3EBB4AFB71C8 /* Configure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 		734E0E15C2D60BB43D6EFD44 /* Pods_GZHKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZHKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB4A07F57D547A9B49830D2 /* Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZHKitSwift-GZHKitSwiftTests/Pods-GZHKitSwift-GZHKitSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZHKitSwift_GZHKitSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,7 @@
 				58E7DF982187102D0034972D /* UserAuthorization */,
 				58E7DFAC2187102D0034972D /* UserDefaults */,
 				58E7DFA22187102D0034972D /* ViewController */,
+				5E27B89353AA3EBB4AFB71C8 /* Configure.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				58E7DFCB2187102D0034972D /* ImagePicker.swift in Sources */,
 				13E669BC22FD955000256258 /* PopGestureConflictProtocol.swift in Sources */,
 				58E7DFC32187102D0034972D /* StringExtension.swift in Sources */,
+				5E27BC1D764660271F81BB91 /* Configure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
