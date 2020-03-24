@@ -13,6 +13,7 @@
 		130DC87E22FD1D4400C80E90 /* AttributedStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */; };
 		130DC87F22FD1D4400C80E90 /* AttributeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87822FD1D3A00C80E90 /* AttributeType.swift */; };
 		130DC88022FD1D4400C80E90 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */; };
+		137806672429B2DD0012BABA /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137806662429B2DC0012BABA /* PatternMatching.swift */; };
 		13E669BC22FD955000256258 /* PopGestureConflictProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E669BB22FD955000256258 /* PopGestureConflictProtocol.swift */; };
 		35584B801B18FFBEBFBA499B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F9C70AED301B8FCD8BB18B /* Pods_GZHKitSwift_GZHKitSwiftTests.framework */; };
 		58E7DF7A21870FAC0034972D /* GZHKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E7DF7821870FAC0034972D /* GZHKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,6 +62,7 @@
 		130DC87922FD1D3A00C80E90 /* AttributeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeBuilder.swift; sourceTree = "<group>"; };
 		130DC87A22FD1D3A00C80E90 /* String+Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributed.swift"; sourceTree = "<group>"; };
 		130DC87B22FD1D3A00C80E90 /* AttributedStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringConvertable.swift; sourceTree = "<group>"; };
+		137806662429B2DC0012BABA /* PatternMatching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		13E669B222FD7C6F00256258 /* Sequence+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+KeyPath.swift"; sourceTree = "<group>"; };
 		13E669B422FD7CD200256258 /* NotificationName+StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+StringLiteral.swift"; sourceTree = "<group>"; };
 		13E669B522FD7CED00256258 /* Sequence+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Math.swift"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				58E7DFAC2187102D0034972D /* UserDefaults */,
 				58E7DFA22187102D0034972D /* ViewController */,
 				5E27B89353AA3EBB4AFB71C8 /* Configure.swift */,
+				5E27B2FF722AA7B1F262C6BD /* PatternMatching */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -340,6 +343,14 @@
 				58E7DFE42187141F0034972D /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		5E27B2FF722AA7B1F262C6BD /* PatternMatching */ = {
+			isa = PBXGroup;
+			children = (
+				137806662429B2DC0012BABA /* PatternMatching.swift */,
+			);
+			path = PatternMatching;
 			sourceTree = "<group>";
 		};
 		AA16CC7A1169B9972E58D383 /* Pods */ = {
@@ -535,6 +546,7 @@
 				58E7DFC72187102D0034972D /* DispatchQueue+Extention.swift in Sources */,
 				58E7DFC02187102D0034972D /* IphoneName.swift in Sources */,
 				58E7DFB72187102D0034972D /* AnyOf.swift in Sources */,
+				137806672429B2DD0012BABA /* PatternMatching.swift in Sources */,
 				58E7DFBD2187102D0034972D /* HexColor.swift in Sources */,
 				58E7DFAF2187102D0034972D /* UIImage+Color.swift in Sources */,
 				58E7DFCB2187102D0034972D /* ImagePicker.swift in Sources */,
