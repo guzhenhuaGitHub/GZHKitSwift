@@ -12,6 +12,7 @@ import UIKit
 struct UserAuthorization {
 
     static let settingUrl = openSettingURL
+
     private init() {}
 
 }
@@ -30,12 +31,7 @@ extension UserAuthorization {
     }
 
     private static var openSettingURL: URL {
-        let openSettingsURLString: String
-        #if swift(>=4.2)
-        openSettingsURLString = UIApplication.openSettingsURLString
-        #else
-        openSettingsURLString = UIApplicationOpenSettingsURLString
-        #endif
+        let openSettingsURLString = UIApplication.openSettingsURLString
         return URL(string: openSettingsURLString)!
     }
 }

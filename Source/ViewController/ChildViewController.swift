@@ -14,31 +14,16 @@ extension UIViewController {
     }
 
     func addComponentViewController(_ viewController: UIViewController, at containerView: UIView) {
-        #if swift(>=4.2)
         addChild(viewController)
-        #else
-        addChildViewController(viewController)
-        #endif
         containerView.addSubview(viewController.view)
         viewController.view.frame.size = containerView.frame.size
-        #if swift(>=4.2)
         viewController.didMove(toParent: self)
-        #else
-        viewController.didMove(toParentViewController: self)
-        #endif
     }
 
     func removeComponented() {
-        guard parent != nil else {
-            return
-        }
-        #if swift(>=4.2)
+        guard parent != nil else { return }
         willMove(toParent: nil)
         removeFromParent()
-        #else
-        willMove(toParentViewController: nil)
-        removeFromParentViewController()
-        #endif
         view.removeFromSuperview()
     }
 }
